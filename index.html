@@ -18,13 +18,14 @@
         }
 
         section {
-            padding: 20px 0;
+            padding: 10px 0;
             padding-top: 60px;
+
             /* Add padding to create space between sections */
         }
 
         section#Home {
-            padding-top: 110px;
+            padding-top: 100px;
         }
 
 
@@ -38,27 +39,75 @@
             /* White text for navbar links */
         }
 
+
+
         .container {
             background-color: #f0f0f0;
             /* White container background */
             padding: 20px;
             border-radius: 10px;
             /* Add rounded corners to containers */
-            box-shadow: 0px 0px 10px rgba(24, 23, 23, 0.1);
-            /* Add a subtle shadow */
+            box-shadow: 0px 0px 5px rgba(24, 23, 23, 0.1);
+
+        }
+
+        .container1 {
+            background-color: rgb(211, 215, 218);
+            /* White container background */
+            padding: 15px;
+            padding-right: 1035px;
+            /* Add rounded corners to containers */
+            box-shadow: 0px 0px 10px rgba(103, 84, 84, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+                /* Adjust the padding as per your preference */
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            /* Adjust margins as per your preference */
+            .col-md-2 {
+                margin-left: 10px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            section {
+                padding: 20px 0;
+                padding-top: 35px;
+
+                /* Adjust the top padding as per your preference */
+            }
+        }
+
+        @media (min-width: 768px) {
+
+            /* Apply styles for screens wider than 768px (desktop) */
+            .navbar-nav .nav-link {
+                margin-left: 90px;
+                /* Adjust the margin as needed */
+
+            }
         }
     </style>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
-        <div style="background-color: #f0f0f0;" class="container">
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top ">
+        <div class="container1">
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+
                 <i class="fas fa-bars"></i>
 
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
+
                     <a class="nav-link active text-dark" href="#Home">Home</a>
                     <a class="nav-link active text-dark" href="#Education">Education</a>
                     <a class="nav-link active text-dark" href="#skills">Skills</a>
@@ -66,7 +115,6 @@
                     <a class="nav-link active text-dark" href="#experience">Experience</a>
                     <a class="nav-link active text-dark" href="#certifications">Certifications</a>
                     <div>
-
                     </div>
                 </div>
             </div>
@@ -77,7 +125,7 @@
         <div class="container" style="background-color: white;">
             <div class="row">
                 <div class="col-md-6">
-                    <img src="images/hasika.jpeg" class="img-fluid rounded-circle img-position"
+                    <img src="images/hasika.jpeg" class="img-fluid rounded-circle img-position shadow-lg"
                         style="width: 170px; height:170px; margin-top:50px; margin-left: 85px;" alt="Responsive image">
                     <h1 class="home" style="margin-top:25px; margin-left: 75px;">Hasika Oggi</h1>
                     <p style="margin-left: 70px;">Senior at Branham High School</p>
@@ -97,7 +145,7 @@
             </div>
         </div>
     </section>
-    <br>
+
 
     <section id="Education">
         <div class="container">
@@ -105,7 +153,7 @@
 
                 <h1>Education</h1>
                 <div class="row align-items-center">
-                    <div class="col-md-2">
+                    <div class="col-md-2 ">
                         <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35"
                             style="margin-top:6px; margin-left: 120px" fill="currentColor"
                             class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
@@ -135,7 +183,7 @@
                         </svg>
                     </div>
                     <div class="col-md-10 ">
-                        <h4>West valley College</h4>
+                        <h4>West Valley College</h4>
                         <p>Activities and societies: Member of the Honors Program at West Valley.Activities and
                             societies: Member of the Honors Program at West Valley.
                             Courses taken at West Valley College : Psychology, American Sign Language, Human Biology,
@@ -148,7 +196,7 @@
 
             </div>
     </section>
-    <br>
+
     <section id="skills">
         <div class="container space" style="background-color: white;">
             <h1 style="text-align: center;">Skills</h1>
@@ -157,7 +205,7 @@
                     <i class="bi bi-code-slash" style="font-size: 60px; margin-left:130px;"></i>
                     <div style="margin-left: 40px;">
                         <p>
-                        <h5>  &nbsp;Programming and tools </h5> python, java, delegation, ML, AI, ANN</p>
+                        <h5> &nbsp;Programming and Tools </h5> Python, Java, Delegation, ML, AI, ANN</p>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -172,7 +220,8 @@
                     </div>
                     <div style="margin-left: 70px;">
                         <p>
-                        <h5> &nbsp; &nbsp; &nbsp; &nbsp;DNA medical</h5>DNA extraction,suturing, Gel electrophoresis, First aid, Blood typing, Delegation</p>
+                        <h5> &nbsp; &nbsp; &nbsp; &nbsp;DNA Medical</h5>DNA extraction,Suturing, Gel electrophoresis,
+                        First Aid, Blood typing, Delegation</p>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -187,34 +236,61 @@
                     </div>
                     <div style="margin-left: 105px;">
                         <p>
-                        <h5>  &nbsp; &nbsp; &nbsp;Languages </h5>English, French, Telugu</p>
+                        <h5> &nbsp; &nbsp; &nbsp;Languages </h5>English, French, Telugu</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <br>
+
     <section id="projects">
         <div class="container">
-            <h1>Projects</h1>
-            <p><strong>AI Model for early phenomena detection</strong></p>
-            <p>Dec 2022 - Dec 2022<br>
-                Developed an AI model that could detect pneumonia at its earliest stages.</p>
-            <p><strong>Social and non-social anxiety in adolescent and adult <br>rats after repeating restraint</strong>
-            </p>
-            <p>Jun 2022 - Aug 2022<br>
-                Worked with a group to create a research presentation on an article about social anxiety in teenagers as
-                compared to rats.</p>
-            <p><strong>How does less sleep affect the body?</strong></p>
-            <p>June 2021 - july 2021<br>
-                Researched the effects of less sleep on the body</p>
-            <p><strong>Ap computer science principle program</strong></p>
-            <p>Aug 2020 - May 2021<br>
-                Developed an AI model that could detect pneumonia at its earliest stages.</p>
-        
+            <h1>Projects</h1> <br>
+            <div class="row align-items-center">
+                <div class="col-md-2" style="margin-bottom: 30px;">
+                    <img src="images/pnuemonia.jpg" class="img-fluid "
+                        style="width: 150px; height: 120px; margin-top:6px; margin-left: 60px" alt="Responsive image">
+                </div>
+                <div class="col-md-10">
+                    <h4>AI Model for Early Pneumonia Detection</h4>
+                    <p> Developed an AI model that could detect pneumonia at its earliest stages. <br>
+                        Dec 2022 - Dec 2022 </p>
+                </div>
+                <div class="col-md-2" style="margin-bottom: 30px;">
+                    <img src="images/graph.png" class="img-fluid "
+                        style="width: 150px; height: 120px; margin-top:6px; margin-left: 60px" alt="Responsive image">
+                </div>
+                <div class="col-md-10">
+                    <h4>Social and Non-social Anxiety in Adolescent and Adult Rats After Repeating Restraint</h4>
+                    <p>Worked with a group to create a research presentation on an article about social anxiety in
+                        teenagers as
+                        compared to rats. <br>
+                        Jun 2022 - Aug 2022 </p>
+                </div>
+                <div class="col-md-2" style="margin-bottom: 30px;">
+                    <img src="images/sleep.jpg" class="img-fluid "
+                        style="width: 150px; height: 120px; margin-top:6px; margin-left: 60px" alt="Responsive image">
+                </div>
+                <div class="col-md-10">
+                    <h4>How does Less Sleep Affect the Body?</h4>
+                    <p>Researched the effects of less sleep on the body. <br>
+                        June 2021 - july 2021 </p>
+                </div>
+                <div class="col-md-2">
+                    <img src="images/computer.jpeg" class="img-fluid "
+                        style="width: 150px; height: 120px; margin-top:6px; margin-left: 60px" alt="Responsive image">
+                </div>
+                <div class="col-md-10">
+                    <h4>Ap Computer Science Principle Program</h4>
+                    <p>Aug 2020 - May 2021</p>
+                </div>
+            </div>
+
+        </div>
+
         </div>
     </section>
-    <br>
+
     <section id="experience">
         <div class="container" style="background-color: white;">
             <h1>Experience</h1>
@@ -230,14 +306,14 @@
                         Mar, Leigh, Prospect, and Westmont High Schools.</p>
                     <p>Aug 2023-present</p>
                     <h6>Superintendent student advisory council member</h6>
-                    <p>Aug 2022-Aug2023</p>  <br>
+                    <p>Aug 2022-Aug2023</p> <br>
                 </div>
                 <div class="col-md-2">
                     <img src="images/piano.jpg" class="img-fluid rounded-circle"
                         style="width: 80px; height: 80px; margin-top:6px; margin-left: 110px" alt="Responsive image">
                 </div>
                 <div class="col-md-10">
-                    <h4>Peer Advocate council member</h4>
+                    <h4>Peer Advocate Council Member</h4>
                     <h6>Santa Clara County Office of Education</h6>
                     <p>The Peer Advocate Advisory Council (PAAC) is a Santa Clara County youth-centered leadership
                         group that engages in community level advocacy and awareness projects ranging from media
@@ -250,9 +326,9 @@
                         style="width: 50px; height: 50px; margin-top:6px; margin-left: 120px" alt="Responsive image">
                 </div>
                 <div class="col-md-10">
-                    <h4>Piano teachet</h4>
+                    <h4>Piano Teacher</h4>
                     <h6>The music plays,inc . part time</h6>
-                    <p>Nov 2022-Present</p>  <br>
+                    <p>Nov 2022-Present</p> <br>
 
                 </div>
                 <div class="col-md-2">
@@ -260,17 +336,17 @@
                         style="width: 60px; height: 60px; margin-top:6px; margin-left: 120px" alt="Responsive image">
                 </div>
                 <div class="col-md-10">
-                    <h4>Panel member</h4>
+                    <h4>Panel Member</h4>
                     <h6>Silicon valley reads</h6>
                     <p>Served as Student Panel member for Silicon Valley author reads and interviewed author of the book
                         Furia.</p>
-                    <p>Mar 2023</p>  <br>
+                    <p>Mar 2023</p> <br>
 
                 </div>
             </div>
 
     </section>
-    <br>
+
     <section id="certifications">
         <div class="container">
             <h1>Certifications</h1>
@@ -323,7 +399,7 @@
                         style="width: 50px; height: 50px; margin-top:6px; margin-left: 120px" alt="Responsive image">
                 </div>
                 <div class="col-md-10">
-                    <h4>Essential epidemiologic tool for public health practice</h4>
+                    <h4>Essential Epidemiologic Tool for Public Health Practice</h4>
                     <h6>The Johns hopkins university</h6>
                     <p>Issued Nov 2022<br>
                         CredentialId V4L4K4EBJQX8</p>
@@ -336,7 +412,7 @@
                 </div>
                 <div class="col-md-10">
                     <br>
-                    <h4>Fundamental neuroscience for neuroimaging</h4>
+                    <h4>Fundamental Neuroscience for Neuroimaging</h4>
                     <h6>The Johns hopkins university</h6>
                     <p>Issued Nov 2022<br>
                         CredentialId QSXB9YYZ55EB</p>
@@ -359,10 +435,12 @@
     </section>
     <br>
     <footer>
-        <div style="background-color: white;"class="container text-center">
+        <div style="background-color: white;" class="container text-center">
             <p>&copy; 2023. All Rights Reserved.</p>
         </div>
     </footer>
+
+
 
 
 
@@ -377,7 +455,7 @@
             });
         });
     </script>
-    
+
 </body>
 
 </html>
