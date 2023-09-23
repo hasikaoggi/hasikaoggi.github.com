@@ -1,0 +1,412 @@
+/* Body Styles */
+body {
+    background-color: white; /* Light gray background */
+}
+/* Section Styles */
+section {
+    padding: 10px 0;
+    padding-top: 40px;
+}
+
+/* Education Section Styles */
+#Education {
+    background-color: #f8f9fa; /* Light Grey background for differentiation */
+    padding: 50px 0;
+}
+
+#Education h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 50px;
+    color: #2c3e50; /* Dark blueish color for the main heading */
+}
+
+#Education .row {
+    border-bottom: 1px solid #eaeaea; /* Solid line to separate education details */
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+}
+
+#Education .row:last-child {
+    border-bottom: 0; /* No border for the last education detail */
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#Education svg {
+    display: block;
+    margin: 0 auto; /* Center the SVG in the column */
+}
+
+#Education .col-10 h4 {
+    color: #34495e; /* Dark blue color */
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+#Education .col-10 p, #Education .col-10 li {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #5d6d7e; /* Grey color */
+}
+
+#Education ul {
+    list-style-type: disc;
+    padding-left: 20px; /* Spacing for bullet points */
+}
+
+
+/* Projects Section Styles */
+#projects {
+    padding: 50px 0;
+    background-color: #ffffff; /* White background for a contrasting look */
+}
+
+#projects h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 50px;
+    color: #2c3e50; /* Dark blueish color for the main heading */
+}
+
+#projects .row {
+    border-bottom: 1px dashed #eaeaea; /* Dashed border for a different look */
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+}
+
+#projects .row:last-child {
+    border-bottom: 0; /* No border for the last item */
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#projects .img-fluid {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+#projects .img-fluid:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+#projects .col-xs-10 h4 {
+    color: #34495e; /* Dark blue color */
+    font-size: 1.5em;
+}
+
+#projects .col-xs-10 h6 {
+    color: #7f8c8d; /* Grey color */
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+#projects .col-xs-10 p {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #5d6d7e; /* Grey color */
+}
+
+#projects .project-link {
+    color: #3498db; /* Blue color */
+    transition: color 0.3s ease;
+}
+
+#projects .project-link:hover {
+    color: #2980b9; /* Darker blue on hover */
+}
+
+
+.project-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;  /* Adjust as needed */
+}
+
+.project-icon {
+    width: 15%;  /* Adjust as needed */
+    padding-right: 20px;  /* Space between the icon and content */
+}
+
+.project-icon img {
+    width: 100%;
+    max-width: 60px;  /* Adjust as needed */
+    height: auto;
+}
+
+.project-content {
+    width: 85%;  /* Adjust as needed */
+}
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+}
+
+/* Icons */
+.bi {
+    margin-bottom: 10px;
+}
+/* Navbar Styles */
+.navbar-custom {
+    background-color: white;
+    box-shadow: 5px 5px rgba(24, 23, 23, 0.1);
+    font-weight: 600;
+}
+
+/* Span Styles */
+.nav-link:hover {
+    color: green !important;
+}
+
+/* Navbar Link Styles */
+ .nav-link.active {
+    color: green !important; /* Highlight color for the active link */
+    font-weight: 700;
+}
+
+.navbar-nav .nav-link {
+    font-size: 16px !important;
+}
+.row {
+    margin-bottom: 20px;  /* Space between rows */
+}
+
+/* Column Styles */
+.col-sm-4 {
+    padding: 15px;  /* Inner spacing within each column */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);  /* Optional: Adds a subtle shadow to each column for depth */
+    border-radius: 5px;  /* Optional: Rounds the corners of each column */
+}
+
+/* On hover, add a subtle background to highlight the column (Optional) */
+.col-sm-4:hover {
+    background-color: rgba(0,0,0,0.02);
+}
+
+
+/* Experience Section Styles */
+#experience {
+    padding: 50px 0;
+    background-color: #f7f9fc; /* Light background color for contrast */
+}
+
+#experience h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 50px;
+    color: #2c3e50; /* Dark blueish color for the main heading */
+}
+
+#experience .row {
+    border-bottom: 1px solid #eaeaea; /* Light border to separate experience items */
+    margin-bottom: 40px; 
+    padding-bottom: 40px; 
+}
+
+#experience .row:last-child {
+    border-bottom: 0; /* No border for the last item */
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#experience .img-fluid {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); 
+    transition: box-shadow 0.3s ease;
+}
+
+#experience .img-fluid:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+#experience .col-xs-10 h4 {
+    color: #34495e; /* Dark blue color */
+    font-size: 1.5em;
+}
+
+#experience .col-xs-10 h6 {
+    color: #7f8c8d; /* Grey color */
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+#experience .col-xs-10 p {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #5d6d7e; /* Grey color */
+}
+/* Certifications Section Styles */
+#certifications {
+    background-color: #f8f9fa; /* Light Grey background for differentiation */
+    padding: 50px 0;
+}
+
+#certifications h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 50px;
+    color: #2c3e50; /* Dark blueish color for the main heading */
+}
+
+#certifications .row {
+    border-bottom: 1px solid #eaeaea; /* Solid line to separate certifications */
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+}
+
+#certifications .row:last-child {
+    border-bottom: 0; /* No border for the last certification */
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#certifications .img-fluid {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+#certifications .col-xs-10 h4, #certifications .col-xs-10 h5 {
+    color: #34495e; /* Dark blue color */
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+#certifications .col-xs-10 h6 {
+    color: #7f8c8d; /* Grey color */
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+#certifications .col-xs-10 p {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #5d6d7e; /* Grey color */
+}
+
+#certifications a {
+    color: #3498db; /* Blue color */
+    transition: color 0.3s ease;
+}
+
+#certifications a:hover {
+    color: #2980b9; /* Darker blue on hover */
+}
+
+
+
+
+/* Container Styles */
+.container {
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(24, 23, 23, 0.1);
+}
+
+.container1 {
+    background-color: rgb(114, 124, 129);
+    padding: 15px;
+    padding-right: 1035px;
+    box-shadow: 0px 0px 10px rgba(103, 84, 84, 0.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .col-md-2 {
+        margin-left: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-nav .nav-link {
+        margin-left: 90px;
+    }
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar-custom {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: #333;
+}
+
+.navbar-custom .navbar-toggler-icon {
+    color: #333;
+}
+
+.home {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.about {
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+.space {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.icon-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.project-icon {
+    flex: 0 0 60px;
+    margin-right: 20px;
+}
+
+.project-content {
+    flex: 1;
+}
+
+.img-position {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+/* Inline styles */
+.container{
+    background-color: white;
+}
+
+
+.home {
+    margin-top: 25px;
+    margin-left: 60px;
+}
+
+.col-sm-8 {
+    margin-top: 40px;
+}
+
+.profile {
+    width: 170px ; 
+    height: 170px ;
+    margin-top: 50px;
+    margin-left: 85px ;
+}
