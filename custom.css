@@ -1,19 +1,15 @@
-/* Body Styles */
-body {
-    background-color: white; /* Light gray background */
-}
 /* Section Styles */
 section {
-    padding: 10px 0;
-    padding-top: 40px;
+     padding-top: 20px;
 }
 
-/* Education Section Styles */
-#Education {
-    background-color: #f8f9fa; /* Light Grey background for differentiation */
-    padding: 50px 0;
+/* Container Styles */
+.container {
+    background-color: var(--primary-color);
+    padding: 40px;
+    border-radius: 4px;
+    box-shadow: 16px 8px 18px rgba(7, 7, -7, 0.1);
 }
-
 #Education h2 {
     text-align: center;
     font-size: 2em;
@@ -164,7 +160,6 @@ section {
 /* Navbar Styles */
 .navbar-custom {
     background-color: white;
-    box-shadow: 5px 5px rgba(24, 23, 23, 0.1);
     font-weight: 600;
 }
 
@@ -253,24 +248,6 @@ section {
 
 #certifications a:hover {
     color: #2980b9; /* Darker blue on hover */
-}
-
-
-
-
-/* Container Styles */
-.container {
-    background-color: var(--primary-color);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px rgba(24, 23, 23, 0.1);
-}
-
-.container1 {
-    background-color: rgb(114, 124, 129);
-    padding: 15px;
-    padding-right: 1035px;
-    box-shadow: 0px 0px 10px rgba(103, 84, 84, 0.1);
 }
 
 /* Responsive Styles */
