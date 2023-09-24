@@ -38,9 +38,10 @@ section {
     margin: 0 auto; /* Center the SVG in the column */
 }
 
-#Education .col-10 h4 {
+#Education h4 {
     color: #34495e; /* Dark blue color */
     font-size: 1.5em;
+    font-weight: 600;
     margin-top: 20px;
 }
 
@@ -68,7 +69,18 @@ section {
     margin-bottom: 50px;
     color: #2c3e50; /* Dark blueish color for the main heading */
 }
-
+.project-content  h4 {
+    color: #34495e; /* Dark blue color */
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.col-xs-10 h4 {
+    color: #34495e; /* Dark blue color */
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-top: 20px;
+}
 #projects .row {
     border-bottom: 1px dashed #eaeaea; /* Dashed border for a different look */
     margin-bottom: 40px;
@@ -177,7 +189,6 @@ section {
 /* Column Styles */
 .col-sm-4 {
     padding: 15px;  /* Inner spacing within each column */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);  /* Optional: Adds a subtle shadow to each column for depth */
     border-radius: 5px;  /* Optional: Rounds the corners of each column */
 }
 
@@ -187,56 +198,7 @@ section {
 }
 
 
-/* Experience Section Styles */
-#experience {
-    padding: 50px 0;
-    background-color: #f7f9fc; /* Light background color for contrast */
-}
 
-#experience h2 {
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 50px;
-    color: #2c3e50; /* Dark blueish color for the main heading */
-}
-
-#experience .row {
-    border-bottom: 1px solid #eaeaea; /* Light border to separate experience items */
-    margin-bottom: 40px; 
-    padding-bottom: 40px; 
-}
-
-#experience .row:last-child {
-    border-bottom: 0; /* No border for the last item */
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-
-#experience .img-fluid {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); 
-    transition: box-shadow 0.3s ease;
-}
-
-#experience .img-fluid:hover {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-}
-
-#experience .col-xs-10 h4 {
-    color: #34495e; /* Dark blue color */
-    font-size: 1.5em;
-}
-
-#experience .col-xs-10 h6 {
-    color: #7f8c8d; /* Grey color */
-    font-style: italic;
-    margin-bottom: 20px;
-}
-
-#experience .col-xs-10 p {
-    font-size: 1em;
-    margin-bottom: 10px;
-    color: #5d6d7e; /* Grey color */
-}
 /* Certifications Section Styles */
 #certifications {
     background-color: #f8f9fa; /* Light Grey background for differentiation */
@@ -354,11 +316,6 @@ body {
 .about {
     margin-top: 30px;
     font-weight: 600;
-}
-
-.space {
-    margin-top: 30px;
-    margin-bottom: 30px;
 }
 
 .icon-container {
