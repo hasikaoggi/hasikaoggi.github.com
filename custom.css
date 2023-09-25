@@ -89,6 +89,11 @@ h4 {
 .col-sm-4:hover {
   background-color: rgba(0, 0, 0, 0.02);
 }
+@media (min-width: 768px){
+  .navbar-nav{
+    margin-left: 50px;
+  }
+}
 
 /* Responsive Styles */
 @media (max-width: 768px) {
