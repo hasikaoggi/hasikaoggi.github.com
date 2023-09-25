@@ -69,7 +69,7 @@ h4 {
 /* Navbar Link Styles */
 .nav-link.active {
   color: green !important; /* Highlight color for the active link */
-  font-weight: 700;
+
 }
 
 .navbar-nav .nav-link {
@@ -119,10 +119,13 @@ body {
 .navbar-custom {
   background-color: #f7f7f7;
   border-bottom: 1px solid #d1d1d1;
-}
+ }
 
 .navbar-custom .navbar-nav .nav-link {
   color: #333;
+  padding-left: 0px;
+  padding-right: 0px;
+  
 }
 
 .navbar-custom .navbar-toggler-icon {
