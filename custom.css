@@ -35,6 +35,10 @@ section {
   height: 50px;
   margin-top: 8px;
   margin-left: 12px;
+  
+}
+.col-xs-2{
+  margin-bottom: -90px
 }
 
 h2 {
@@ -89,7 +93,7 @@ h4 {
 /* Responsive Styles */
 @media (max-width: 768px) {
   .container {
-    padding: 10px;
+    padding: 20px;
   }
 
   .col-md-2 {

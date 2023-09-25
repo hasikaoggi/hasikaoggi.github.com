@@ -6,6 +6,9 @@ navItems.forEach((navItem) => {
      link.classList.remove("active");
     });
     e.currentTarget.classList.add("active");
+    if (navbarCollapse.classList.contains("show")) {
+      navbarCollapse.classList.remove("show");
+    }
   });
 });
 
@@ -22,6 +25,9 @@ document.addEventListener("scroll", function () {
     }
   });
 });
+
+
+
 
 
 
