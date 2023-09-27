@@ -207,10 +207,36 @@ body {
   }
 }
 
-.zoom:hover {
-  -ms-transform: scale(1.5);
-  /* IE 9 */
-  -webkit-transform: scale(1.5);
-  /* Safari 3-8 */
-  transform: scale(2);
+.zoom:hover:hover {
+  transform: scale(1.1);
+}
+/* Styles for the modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+  left: 700px;
+  top: 100px;
+  width: 50%;
+  height: 50%;
+  
+}
+
+/* Modal content */
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+  max-height: 80%;
+}
+
+/* Close button */
+.close-modal-button {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 30px;
+  color: black;
+  cursor: pointer;
 }
