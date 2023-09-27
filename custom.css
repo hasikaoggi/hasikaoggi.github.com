@@ -12,15 +12,16 @@ section {
 }
 
 .col-xs-10 h4 {
-  color: #34495e; /* Dark blue color */
+  color: #34495e;
+  /* Dark blue color */
   font-size: 1.5em;
   font-weight: 600;
   margin-top: 20px;
 }
-.col-xs-10
-{
-    height: 100%; 
-    padding-left: 90px
+
+.col-xs-10 {
+  height: 100%;
+  padding-left: 90px
 }
 
 .profile {
@@ -35,9 +36,10 @@ section {
   height: 50px;
   margin-top: 8px;
   margin-left: 12px;
-  
+
 }
-.col-xs-2{
+
+.col-xs-2 {
   margin-bottom: -90px
 }
 
@@ -45,11 +47,13 @@ h2 {
   text-align: center;
   font-size: 2em;
   margin-bottom: 50px;
-  color: #2c3e50; /* Dark blueish color for the main heading */
+  color: #2c3e50;
+  /* Dark blueish color for the main heading */
 }
 
 h4 {
-  color: #34495e; /* Dark blue color */
+  color: #34495e;
+  /* Dark blue color */
   font-size: 1.5em;
   font-weight: 600;
   margin-top: 20px;
@@ -68,29 +72,35 @@ h4 {
 
 /* Navbar Link Styles */
 .nav-link.active {
-  color: green !important; /* Highlight color for the active link */
+  color: green !important;
+  /* Highlight color for the active link */
 
 }
 
 .navbar-nav .nav-link {
   font-size: 16px !important;
 }
+
 .row {
-  margin-bottom: 20px; /* Space between rows */
+  margin-bottom: 20px;
+  /* Space between rows */
 }
 
 /* Column Styles */
 .col-sm-4 {
-  padding: 15px; /* Inner spacing within each column */
-  border-radius: 5px; /* Optional: Rounds the corners of each column */
+  padding: 15px;
+  /* Inner spacing within each column */
+  border-radius: 5px;
+  /* Optional: Rounds the corners of each column */
 }
 
 /* On hover, add a subtle background to highlight the column (Optional) */
 .col-sm-4:hover {
   background-color: rgba(0, 0, 0, 0.02);
 }
-@media (min-width: 768px){
-  .navbar-nav{
+
+@media (min-width: 768px) {
+  .navbar-nav {
     margin-left: 50px;
   }
 }
@@ -119,13 +129,13 @@ body {
 .navbar-custom {
   background-color: #f7f7f7;
   border-bottom: 1px solid #d1d1d1;
- }
+}
 
 .navbar-custom .navbar-nav .nav-link {
   color: #333;
   padding-left: 0px;
   padding-right: 0px;
-  
+
 }
 
 .navbar-custom .navbar-toggler-icon {
@@ -146,6 +156,7 @@ body {
   color: rgb(79, 78, 78);
   font-weight: 500;
 }
+
 .home {
   margin-top: 25px;
   margin-left: 60px;
@@ -153,4 +164,53 @@ body {
 
 .col-sm-8 {
   margin-top: 40px;
+}
+
+@media (min-width: 768px) {
+  .col-6 {
+    margin-left: -450px;
+  }
+
+  .col {
+    margin-left: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  #Projects h4 {
+    margin-left: -100px;
+  }
+
+  #Projects p {
+    margin-left: -100px;
+  }
+
+  #Projects .col-md-4 img {
+    width: 150px;
+    height: 150px;
+    margin-left: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  #Projects img {
+    margin-left: 125px;
+  }
+
+  #Projects .col-md-4 img {
+    width: 150px;
+    height: 150px;
+    margin-left: 100px;
+  }
+  #shdw{
+    margin-top: 50px;
+  }
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5);
+  /* IE 9 */
+  -webkit-transform: scale(1.5);
+  /* Safari 3-8 */
+  transform: scale(2);
 }
