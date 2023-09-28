@@ -78,7 +78,7 @@ h4 {
 }
 
 .navbar-nav .nav-link {
-  font-size: 16px !important;
+  font-size: 14px !important;
 }
 
 .row {
@@ -202,7 +202,8 @@ body {
     height: 150px;
     margin-left: 100px;
   }
-  #shdw{
+
+  #shdw {
     margin-top: 50px;
   }
 }
@@ -210,6 +211,7 @@ body {
 .zoom:hover:hover {
   transform: scale(1.1);
 }
+
 /* Styles for the modal */
 .modal {
   display: none;
@@ -221,7 +223,7 @@ body {
   width: 50%;
   height: 50%;
 
-  
+
 }
 
 /* Modal content */
@@ -241,11 +243,51 @@ body {
   color: black;
   cursor: pointer;
 }
+
 @media (min-width: 768px) {
-.move a {
-  margin-left: 90px;
+  .move a {
+    margin-left: 90px;
+  }
+
+  .navbar-nav a {
+    margin-right: 25px;
+  }
 }
-.navbar-nav a{
-  margin-right: 20px;
+
+
+
+@media (min-width: 768px) {
+  .col img {
+    width: 50px;
+    height: 50px;
+  }
+  #Certifications .col-md-4 img {
+    width: 100px;
+    height: 100px;
+    margin-left: 30px;
+    margin-right: 10px;
+  }
+  #Certifications .col-md-6{
+    margin-right: 102px;
+  }
 }
+
+@media (max-width: 768px) {
+  .col img {
+    width: 50px;
+    height: 50px;
+  }
+  #Certifications .col-md-4 img {
+    width: 75px;
+    height: 75px;
+    margin-left: 125px;
+  }
+
+  #Certifications .col img {
+    margin-left: 125px;
+  }
+
+  #shdw {
+    margin-top: 50px;
+  }
 }
