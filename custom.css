@@ -247,3 +247,15 @@ button.active {
   text-align: center;
   margin-top: 50px;
 }
+.tablinks:hover {
+  background-color: lightgreen;
+  transform: scale(1.05);
+}
+.tablinks {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
