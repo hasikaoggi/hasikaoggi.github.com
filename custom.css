@@ -116,11 +116,11 @@ h4 {
   }
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .navbar-nav .nav-link {
     margin-left: 90px;
   }
-}
+} */
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -216,10 +216,11 @@ body {
   position: fixed;
   z-index: 1;
   padding-top: 50px;
-  left: 700px;
+  left: 350px;
   top: 100px;
   width: 50%;
   height: 50%;
+
   
 }
 
@@ -239,4 +240,12 @@ body {
   font-size: 30px;
   color: black;
   cursor: pointer;
+}
+@media (min-width: 768px) {
+.move a {
+  margin-left: 90px;
+}
+.navbar-nav a{
+  margin-right: 20px;
+}
 }
