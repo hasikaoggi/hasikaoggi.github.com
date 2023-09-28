@@ -25,10 +25,10 @@
                 <a class="nav-link" href="#Education">Education</a>
                 <a class="nav-link" href="#Skills">Skills</a>
                 <a class="nav-link" href="#Projects">Projects</a>
-                <a class="nav-link" href="#Awards">Awards</a>
-                <a class="nav-link" href="#volunteer">Volunteer</a>
+                <a class="nav-link" href="#Others">Others</a>
+                <!-- <a class="nav-link" href="#volunteer">Volunteer</a>
                 <a class="nav-link" href="#Experience">Experience</a>
-                <a class="nav-link" href="#Certifications">Certifications</a>
+                <a class="nav-link" href="#Certifications">Certifications</a> -->
             </div>
         </div>
     </nav>
@@ -287,10 +287,15 @@
         </div>
     </section>
 
-    <section id="Awards">
-        <div class="container">
+    <section id="Others">
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Awards')">Awards</button>
+            <button class="tablinks" onclick="openCity(event, 'Volunteer')">Volunteer</button>
+            <button class="tablinks" onclick="openCity(event, 'Experience')">Experience</button>
+            <button class="tablinks" onclick="openCity(event, 'Certifications')">Certifications</button>
+        </div>
+        <div class="container tabcontent" id="Awards">
             <h2 style="text-align: center">Awards</h2>
-
             <div class="row align-items-center">
                 <div class="col-xs-2">
                     <img src="images/president_award.png" alt="Responsive image" />
@@ -305,11 +310,12 @@
                 </div>
                 <div class="col-xs-10">
                     <h4>AP Scholar with Distinction</h4>
-                    <p>Associated with Branham High School<br />jul 2023</p>
+                    <p>Associated with Branham High School<br />Jul 2023</p>
                 </div>
 
                 <div class="col-xs-2">
-                    <img src="images/BranhamHighSchoolLogo.png" class="img-fluid rounded-circle" alt="Responsive image" />
+                    <img src="images/BranhamHighSchoolLogo.png" class="img-fluid rounded-circle"
+                        alt="Responsive image" />
                 </div>
                 <div class="col-xs-10">
                     <h4>Principal's Award - Branham High School</h4>
@@ -363,11 +369,7 @@
                 </div>
             </div>
         </div>
-    </section>
-
-
-    <section id="volunteer">
-        <div class="container">
+        <div class="container tabcontent" id="Volunteer">
             <h2 style="text-align: center">Volunteer</h2>
 
             <div class="row align-items-center">
@@ -436,10 +438,7 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <section id="Experience">
-        <div class="container">
+        <div class="container tabcontent" id="Experience">
             <h2 style="text-align: center">Experience</h2>
             <div class="row align-items-center">
                 <div class="col-xs-2">
@@ -497,10 +496,7 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <section id="Certifications">
-        <div class="container">
+        <div class="container tabcontent" id="Certifications">
             <h2 style="text-align: center">Certifications</h2>
 
             <div class="row align-items-center">
@@ -570,7 +566,6 @@
             </div>
         </div>
     </section>
-    <footer> </footer>
 
     <!-- Include Bootstrap 5 JS and Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
