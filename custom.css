@@ -256,6 +256,7 @@ body {
 
 /* Media query for mobile devices */
 @media (max-width: 768px) {
+
   /* Center the modal vertically and horizontally */
   .modal {
     display: none;
@@ -267,21 +268,24 @@ body {
     height: 100%;
     overflow: auto;
   }
-  
+
   /* Modal content */
   .modal-content {
     margin: auto;
-    max-width: 60%; /* Adjust the width as needed for your image */
-    max-height: 70%; /* Adjust the height as needed for your image */
+    max-width: 60%;
+    /* Adjust the width as needed for your image */
+    max-height: 70%;
+    /* Adjust the height as needed for your image */
   }
-  
+
   /* Close button */
   .close-modal-button {
     position: absolute;
     top: 20px;
     right: 40px;
     font-size: 30px;
-    color: black; /* Change the color to make it visible on the background */
+    color: black;
+    /* Change the color to make it visible on the background */
     cursor: pointer;
   }
 }
@@ -294,7 +298,7 @@ body {
 }
 
 /* Style for the <strong> element within the first paragraph */
- #Home p strong {
+#Home p strong {
   font-weight: bold;
   color: #2C3E50;
 }
@@ -329,3 +333,33 @@ body {
   color: green;
 }
 
+@media (min-width: 768px) {
+  #Awards .col-md-4 img {
+    height: 150px;
+    width: 150px;
+    margin-left: 15px;
+  }
+
+  #Awards .a img {
+    height: 50px;
+    width: 50px;
+  }
+
+  #Awards .col-md-6 {
+    margin-right: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  #Awards .col-md-4 img {
+    height: 100px;
+    width: 100px;
+    margin-left: 125px;
+  }
+
+  #Awards .a img {
+    height: 50px;
+    width: 50px;
+    margin-left: 150px;
+  }
+}
