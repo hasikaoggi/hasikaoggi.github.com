@@ -286,4 +286,46 @@ body {
   }
 }
 
+/* Style for the first paragraph */
+#Home p {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Style for the <strong> element within the first paragraph */
+ #Home p strong {
+  font-weight: bold;
+  color: #2C3E50;
+}
+
+/* Style for the <em> element within the first paragraph */
+#Home p em {
+  font-style: italic;
+  color: green;
+}
+
+/* Style for the second paragraph */
+/* (Reusing the general <p> style, but you can specify it separately if needed) */
+
+/* Style for the <strong> element within the second paragraph */
+#Home p:nth-of-type(2) strong {
+  font-weight: bold;
+  color: #2C3E50;
+}
+
+/* Style for the third paragraph */
+/* (Reusing the general <p> style, but you can specify it separately if needed) */
+
+/* Style for the <strong> element within the third paragraph */
+#Home p:nth-of-type(3) strong {
+  font-weight: bold;
+  color: #2C3E50;
+}
+
+/* Style for the <em> element within the third paragraph */
+#Home p:nth-of-type(3) em {
+  font-style: italic;
+  color: green;
+}
 
