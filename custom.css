@@ -354,12 +354,12 @@ body {
   #Awards .col-md-4 img {
     height: 100px;
     width: 100px;
-    margin-left: 125px;
+    margin-left: 100px;
   }
 
   #Awards .a img {
     height: 50px;
     width: 50px;
-    margin-left: 150px;
+    margin-left: 125px;
   }
 }
