@@ -27,11 +27,11 @@ document.addEventListener("scroll", function () {
 });
 
 // Function to open the modal and display the image
-function openModal() {
+function openModal(imageSrc) {
   var modal = document.getElementById("myModal");
   var modalImg = document.getElementById("modalImg");
   modal.style.display = "block";
-  modalImg.src = "images/pnue.PNG";
+  modalImg.src = imageSrc;
 }
 
 // Function to close the modal
@@ -41,37 +41,15 @@ function closeModal() {
 }
 
 // Close the modal if the user clicks outside of it
-// window.onclick = function (event) {
-//   var modal = document.getElementById("myModal");
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//   }
-// }
-function image2() {
+window.onclick = function (event) {
   var modal = document.getElementById("myModal");
-  var modalImg = document.getElementById("modalImg");
-  modal.style.display = "block";
-  modalImg.src = "images/rat.png";
-}
-function image3() {
-  var modal = document.getElementById("myModal");
-  var modalImg = document.getElementById("modalImg");
-  modal.style.display = "block";
-  modalImg.src = "images/sleep.jpeg";
-}
-function image4() {
-  var modal = document.getElementById("myModal");
-  var modalImg = document.getElementById("modalImg");
-  modal.style.display = "block";
-  modalImg.src = "images/science.jpeg";
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
 }
 
-function cer1() {
-  var modal = document.getElementById("myModal");
-  var modalImg = document.getElementById("modalImg");
-  modal.style.display = "block";
-  modalImg.src = "images/image.png";
-}
+
+
 
 
 
