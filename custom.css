@@ -182,8 +182,8 @@ body {
   }
 
   #Projects .col-md-4 img {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     margin-left: 25px;
   }
 }
@@ -214,10 +214,10 @@ body {
   position: fixed;
   z-index: 1;
   padding-top: 50px;
-  left: 350px;
-  top: 100px;
+  left: 250px;
+  top: 60px;
   width: 60%;
-  height: 65%;
+  height: 80%;
 }
 
 /* Modal content */
@@ -329,13 +329,15 @@ body {
 
 @media (min-width: 768px) {
   #Awards .col-md-4 img {
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
+    margin-left: 20px;
     }
 
   #Awards .a img {
     height: 50px;
     width: 50px;
+    margin-left: 15px;
   }
 
   #Awards .col-md-6 {
