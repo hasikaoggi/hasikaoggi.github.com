@@ -27,26 +27,52 @@ document.addEventListener("scroll", function () {
 });
 
 // Function to open the modal and display the image
+// function openModal(imageSrc) {
+//   var modal = document.getElementById("myModal");
+//   var modalImg = document.getElementById("modalImg");
+//   modal.style.display = "block";
+//   modalImg.src = imageSrc;
+// }
+
+// // Function to close the modal
+// function closeModal() {
+//   var modal = document.getElementById("myModal");
+//   modal.style.display = "none";
+// }
+
+// // Close the modal if the user clicks outside of it
+// window.onclick = function (event) {
+//   var modal = document.getElementById("myModal");
+//   if (event.target == modal) {
+//     modal.style.display = "none";
+//   }
+// }
 function openModal(imageSrc) {
   var modal = document.getElementById("myModal");
   var modalImg = document.getElementById("modalImg");
+  
+  // Add the blur class to the background elements
+  var backgroundElements = document.querySelectorAll(".container > *");
+  backgroundElements.forEach(function(element) {
+    element.classList.add("blur-background");
+  });
+  
   modal.style.display = "block";
   modalImg.src = imageSrc;
 }
 
-// Function to close the modal
 function closeModal() {
   var modal = document.getElementById("myModal");
+  
+  // Remove the blur class from the background elements
+  var backgroundElements = document.querySelectorAll(".container > *");
+  backgroundElements.forEach(function(element) {
+    element.classList.remove("blur-background");
+  });
+  
   modal.style.display = "none";
 }
 
-// Close the modal if the user clicks outside of it
-window.onclick = function (event) {
-  var modal = document.getElementById("myModal");
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
 
 
 
