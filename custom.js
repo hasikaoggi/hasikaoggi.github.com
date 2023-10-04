@@ -73,6 +73,11 @@ function closeModal() {
   modal.style.display = "none";
 }
 
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+    closeModal();
+  }
+})
 
 
 
