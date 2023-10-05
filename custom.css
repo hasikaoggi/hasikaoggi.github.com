@@ -12,7 +12,7 @@ section {
 }
 
 .col-xs-10 h4 {
-  color: #34495e;
+  color:#21ba75;
   /* Dark blue color */
   font-size: 1.5em;
   font-weight: 600;
@@ -47,12 +47,12 @@ h2 {
   text-align: center;
   font-size: 2em;
   margin-bottom: 50px;
-  color: #2c3e50;
+  color: rgb(16, 5, 41);
   /* Dark blueish color for the main heading */
 }
 
 h4 {
-  color: #34495e;
+  color: rgb(16, 5, 41);
   /* Dark blue color */
   font-size: 1.5em;
   font-weight: 600;
@@ -291,11 +291,11 @@ body {
 }
 
 /* Style for the first paragraph */
-#Home p {
+/*#Home p {
   font-family: 'Arial', sans-serif;
   font-size: 16px;
   color: #333;
-}
+}*/
 
 /* Style for the <strong> element within the first paragraph */
 #Home p strong {
@@ -303,7 +303,7 @@ body {
   color: #2C3E50;
 }
 
-/* Style for the <em> element within the first paragraph */
+ /*Style for the <em> element within the first paragraph */
 #Home p em {
   font-style: italic;
   color: green;
@@ -312,7 +312,7 @@ body {
 /* Style for the second paragraph */
 /* (Reusing the general <p> style, but you can specify it separately if needed) */
 
-/* Style for the <strong> element within the second paragraph */
+/*Style for the <strong> element within the second paragraph */
 #Home p:nth-of-type(2) strong {
   font-weight: bold;
   color: #2C3E50;
@@ -363,3 +363,80 @@ body {
     margin-left: 125px;
   }
 }
+/* Add Bootstrap classes for centering the image */
+.hasika {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25vh;
+}
+
+/* Define your custom animation */
+@keyframes zoomIn {
+  0% {
+      transform: scale(0);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+/* Apply the animation to the image */
+#animated-image {
+  animation: zoomIn 2s ease-in-out;
+}
+p {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.about{
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+/* Common styles for both light and dark modes */
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Light Mode styles */
+body.light-mode {
+  background-color: #f0f0f0;
+  color: #333;
+
+
+}
+
+/* Dark Mode styles */
+body.dark-mode {
+  background-color: #333;
+  color: #fff;
+
+}
+
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2.4s ease;
+}
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+
+
+

@@ -47,7 +47,55 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 }
+// Function to enable Dark Mode
+function enableDarkMode() {
+  document.body.classList.add("dark-mode");
+  localStorage.setItem("mode", "dark");
+}
 
+// Function to enable Light Mode
+function enableLightMode() {
+  document.body.classList.remove("dark-mode");
+  localStorage.setItem("mode", "light");
+}
+
+// Check user's preference from local storage
+const savedMode = localStorage.getItem("mode");
+
+// Apply saved mode (if available) on page load
+if (savedMode === "dark") {
+  enableDarkMode();
+} else {
+  enableLightMode();
+}
+
+// Dark Mode button click event
+const darkModeButton = document.getElementById("darkModeButton");
+darkModeButton.addEventListener("click", enableDarkMode);
+
+// Light Mode button click event
+const lightModeButton = document.getElementById("lightModeButton");
+lightModeButton.addEventListener("click", enableLightMode);
+
+window.addEventListener('scroll',reveal);
+
+function reveal(){
+  var reveals = document.querySelectorAll('.reveal');
+
+  for(var i=0; i< reveals.length; i++){
+
+    var windowheight = window.innerHeight;
+    var revealtop = reveals[i].getBoundingClientRect().top;
+    var revealpoint = 150;
+
+    if(revealtop < windowheight - revealpoint ){
+      reveals[i].classList.add('active');
+    }
+    else{
+      reveals[i].classList.remove('active');
+    }
+  }
+}
 
 
 
