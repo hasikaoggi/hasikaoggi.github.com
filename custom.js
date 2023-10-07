@@ -107,7 +107,7 @@ moonIcon.addEventListener('click', () => {
 
     // Set paragraphs to green in dark mode
     pElements.forEach((p) => {
-        p.style.color = '#FFDDBB';
+        p.style.color = 'white';
     });
 
     isDarkMode = true;
