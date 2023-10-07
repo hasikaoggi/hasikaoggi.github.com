@@ -81,6 +81,12 @@ const h4Elements = document.querySelectorAll('h4');
 const pElements = document.querySelectorAll('#Home p'); // Assuming 'Home' is the ID of the container for your paragraphs.
 
 let isDarkMode = false;
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+    closeModal();
+  }
+})
+
 
 moonIcon.addEventListener('click', () => {
     document.body.classList.add('dark-mode');
