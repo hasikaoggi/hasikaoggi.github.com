@@ -12,8 +12,8 @@ section {
 }
 
 .col-xs-10 h4 {
-  color:#21ba75;
-  /* Dark blue color */
+  color:rgb(30, 25, 40);
+  /*Dark blue color */
   font-size: 1.5em;
   font-weight: 600;
   margin-top: 20px;
@@ -47,12 +47,12 @@ h2 {
   text-align: center;
   font-size: 2em;
   margin-bottom: 50px;
-  color: rgb(16, 5, 41);
+  color: rgb(30, 25, 40);
   /* Dark blueish color for the main heading */
 }
 
 h4 {
-  color: rgb(16, 5, 41);
+  color: rgb(30, 25, 40);
   /* Dark blue color */
   font-size: 1.5em;
   font-weight: 600;
@@ -170,10 +170,6 @@ body {
   .col-6 {
     margin-left: -450px;
   }
-
-  .col {
-    margin-left: 15px;
-  }
 }
 
 @media (min-width: 768px) {
@@ -186,8 +182,8 @@ body {
   }
 
   #Projects .col-md-4 img {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     margin-left: 25px;
   }
 }
@@ -218,12 +214,10 @@ body {
   position: fixed;
   z-index: 1;
   padding-top: 50px;
-  left: 350px;
-  top: 100px;
-  width: 50%;
-  height: 50%;
-
-
+  left: 250px;
+  top: 60px;
+  width: 60%;
+  height: 80%;
 }
 
 /* Modal content */
@@ -335,14 +329,15 @@ body {
 
 @media (min-width: 768px) {
   #Awards .col-md-4 img {
-    height: 150px;
-    width: 150px;
-    margin-left: 15px;
-  }
+    height: 100px;
+    width: 100px;
+    margin-left: 20px;
+    }
 
   #Awards .a img {
     height: 50px;
     width: 50px;
+    margin-left: 15px;
   }
 
   #Awards .col-md-6 {
@@ -369,6 +364,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 25vh;
+  width: 25vh;
 }
 
 /* Define your custom animation */
@@ -385,7 +381,7 @@ body {
 #animated-image {
   animation: zoomIn 2s ease-in-out;
 }
-p {
+.hello{
   animation-duration: 3s;
   animation-name: slidein;
 }
@@ -410,33 +406,36 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-/* Light Mode styles */
-body.light-mode {
-  background-color: #f0f0f0;
-  color: #333;
-
-
+/* CSS for Light Mode */
+.light-mode {
+  background-color: white; /* Set your light mode background color */
+  color: black; /* Set your light mode text color */
 }
 
-/* Dark Mode styles */
-body.dark-mode {
-  background-color: #333;
-  color: #fff;
-
+/* CSS for Dark Mode */
+.dark-mode {
+  background-color: black; /* Set your dark mode background color */
+  color: white; /* Set your dark mode text color */
 }
-
 
 .reveal{
   position: relative;
   transform: translateY(150px);
   opacity: 0;
-  transition: all 2.4s ease;
+  transition: all 2s ease;
 }
 .reveal.active{
   transform: translateY(0px);
   opacity: 1;
 }
 
-
-
-
+.blur-background {
+  filter: blur(5px); /* You can adjust the blur amount as needed */
+  pointer-events: none; /* Prevent clicks on the blurred background */
+}
+@media (min-width: 768px) {
+  .navbar-nav i{
+   margin-left: 400px;
+   margin-top: 10px;
+  }
+ }
