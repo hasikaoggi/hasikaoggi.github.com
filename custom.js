@@ -73,19 +73,6 @@ function closeModal() {
   modal.style.display = "none";
 }
 
-const moonIcon = document.getElementById('moon-icon');
-const sunIcon = document.getElementById('sun-icon');
-const headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
-const h2Elements = document.querySelectorAll('h2');
-const h4Elements = document.querySelectorAll('h4');
-const pElements = document.querySelectorAll('#Home p'); // Assuming 'Home' is the ID of the container for your paragraphs.
-
-let isDarkMode = false;
-document.addEventListener('keydown', (event) => {
-  if (event.key === 'Escape') {
-    closeModal();
-  }
-})
 
 const moonIcon = document.getElementById('moon-icon');
 const sunIcon = document.getElementById('sun-icon');
