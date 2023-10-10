@@ -73,6 +73,12 @@ function closeModal() {
   modal.style.display = "none";
 }
 
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+    closeModal();
+  }
+});
+
 
 const moonIcon = document.getElementById('moon-icon');
 const sunIcon = document.getElementById('sun-icon');
