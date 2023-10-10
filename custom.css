@@ -326,6 +326,10 @@ body {
   font-style: italic;
   color: green;
 }
+#community .col-md-4 img{
+height: 100px;
+width: 100px;
+}
 
 @media (min-width: 768px) {
   #Awards .col-md-4 img {
@@ -395,9 +399,9 @@ body {
 
 @media (min-width: 768px) {
   #Experience .col-md-4 img {
-    height: 100px;
-    width: 100px;
-    margin-left: 20px;
+    height: 150px;
+    width: 150px;
+    margin-left: 500px;
     }
 
   #Experience .a img {
@@ -414,13 +418,22 @@ body {
   #Experience .col-md-4 img {
     height: 100px;
     width: 100px;
-    margin-left: 100px;
+    margin-left: 130px;
   }
 
   #Experience .a img {
     height: 50px;
     width: 50px;
     margin-left: 125px;
+  }
+}
+#MedicalResearch .col-md-4 img{
+ height: 100px;
+ width: 100px;
+}
+@media (max-width: 768px) {
+  #MedicalResearch .b{
+    margin-left: 50px;
   }
 }
 /* Add Bootstrap classes for centering the image */

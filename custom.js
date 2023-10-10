@@ -86,6 +86,7 @@ const headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
 const h2Elements = document.querySelectorAll('h2');
 const h4Elements = document.querySelectorAll('h4');
 const pElements = document.querySelectorAll('#Home p'); // Assuming 'Home' is the ID of the container for your paragraphs.
+const strongElements = document.querySelectorAll('#Home p strong'); // Select strong elements within 'p' elements.
 
 let isDarkMode = false;
 
@@ -100,14 +101,20 @@ moonIcon.addEventListener('click', () => {
     h2Elements.forEach((h2) => {
         h2.style.color = '#F08080';
     });
-// Set h4 elements to green in dark mode
+
+    // Set h4 elements to green in dark mode
     h4Elements.forEach((h4) => {
         h4.style.color = '#A8D8B9';
     });
 
     // Set paragraphs to green in dark mode
     pElements.forEach((p) => {
-        //p.style.color = '#FFDDBB';
+        // p.style.color = '#FFDDBB';
+    });
+
+    // Set strong elements within paragraphs to green in dark mode
+    strongElements.forEach((strong) => {
+        strong.style.color = '#33b38b'; // Green color
     });
 
     isDarkMode = true;
@@ -117,6 +124,7 @@ moonIcon.addEventListener('click', () => {
     sunIcon.classList.add('fa-sun');
     sunIcon.style.color = 'black'; // Set the color of the sun icon to black
 });
+
 sunIcon.addEventListener('click', () => {
     document.body.classList.add('light-mode');
     document.body.classList.remove('dark-mode');
@@ -136,15 +144,22 @@ sunIcon.addEventListener('click', () => {
 
     // Reset paragraphs to their default color in light mode
     pElements.forEach((p) => {
-       p.style.color = '';
+        p.style.color = '';
     });
-isDarkMode = false;
+
+    // Reset strong elements within paragraphs to their default color in light mode
+    strongElements.forEach((strong) => {
+        strong.style.color = ''; // Reset to default color
+    });
+
+    isDarkMode = false;
     sunIcon.style.display = 'none'; // Hide the moon icon
     moonIcon.style.display = 'inline'; // Display the sun icon
     moonIcon.classList.remove('fa-sun');
     moonIcon.classList.add('fa-moon');
     moonIcon.style.color = 'black'; // Set the color of the moon icon to black
 });
+
 
 // Detect the initial mode (e.g., based on user preferences)
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
