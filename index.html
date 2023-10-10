@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="custom.css" />
 </head>
 
-<body>
+<body class="light-mode">
     <nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,31 +33,33 @@
                 <a class="nav-link" href="#Experience">Experience</a>
                 <a class="nav-link" href="#Certifications">Certifications</a>
                 <a class="nav-link" href="#MedicalResearch">Medical & Research</a>
+                <i id="moon-icon" class="fas fa-moon"></i> <!-- Moon icon for dark mode -->
+                <i id="sun-icon" class="fas fa-sun" style="display: none;"></i> <!-- Sun icon for light mode -->
 
             </div>
+
         </div>
     </nav>
-
     <section id="Home">
         <div class="container space">
             <div class="row">
                 <div class="col-sm-4">
                     <img src="images/hasika.jpeg"
-                        class="profile img-fluid rounded-circle img-position shadow-lg profile"
-                        alt="Responsive image" />
-                    <h1 class="home">Hasika Oggi</h1>
-                    <p style="margin-left: 40px !important">Senior at Branham High School</p>
+                        class="profile img-fluid rounded-circle img-position shadow-lg profile hasika"
+                        alt="Animated Image" id="animated-image" />
+                    <h1 class="home" id="animated-image">Hasika Oggi</h1>
+                    <p style="margin-left: 40px !important" id="animated-image">Senior at Branham High School</p>
                 </div>
                 <div class="col-sm-8">
                     <h4 class="about">About me</h4>
-                        <p>
+                        <p class="hello">
                         Hello! I’m <strong>Hasika</strong>, a Senior at Branham High and Honors Student at West Valley College. The world of medical sciences has always captivated me, The potential of medical science to make transformative change in peoples lives is what fuels my academic journey and I approach every learning opportunity with unwavering enthusiasm and dedication. I am eager to continue my education and make a meaningful contribution to the field of healthcare.</p>
 
-                        <p>In my role as the <strong>Student Board Trustee</strong> for the Campbell Union High School District, I advocate tirelessly for an inclusive educational environment. Actively participating in advisory councils, I strive to ensure that the voices of all students are heard.
+                        <p class="hello">In my role as the <strong>Student Board Trustee</strong> for the Campbell Union High School District, I advocate tirelessly for an inclusive educational environment. Actively participating in advisory councils, I strive to ensure that the voices of all students are heard.
                         </p>
-                        <p>Beyond academics, I find immense joy in sharing music as a part-time piano teacher. Additionally, I am a staunch advocate for mental health awareness in our community.
+                        <p class="hello">Beyond academics, I find immense joy in sharing music as a part-time piano teacher. Additionally, I am a staunch advocate for mental health awareness in our community.
                         </p>
-                        <p>Having been honored with the <strong>President's Volunteer Service Award - Gold</strong>, and certified by esteemed institutions such as Johns Hopkins and the American Heart Association, I look forward to future opportunities to make a positive impact on the community through transparent and collaborative scientific endeavors.
+                        <p class="hello">Having been honored with the <strong>President's Volunteer Service Award - Gold</strong>, and certified by esteemed institutions such as Johns Hopkins and the American Heart Association, I look forward to future opportunities to make a positive impact on the community through transparent and collaborative scientific endeavors.
                         </p>
                 </div>
             </div>
@@ -65,7 +67,7 @@
     </section>
 
     <section id="Education">
-        <div class="container">
+        <div class="container reveal">
             <h2>
                 <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
                     class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
@@ -82,7 +84,7 @@
 
                 <div class="col-sm-4">
                     <h4>Branham High School</h4>
-                    <h6><strong>GPA</strong> (UW): 4.0   <strong>ACT:</strong> 35</h6>
+                    <h6><strong>GPA</strong> (UW): 4.0 <strong>ACT:</strong> 35</h6>
                     <ul>
                         <li>AP Chemistry</li>
                         <li>AP Physics</li>
@@ -128,7 +130,7 @@
     </section>
 
     <section id="Skills">
-        <div class="container">
+        <div class="container reveal">
             <h2 style="text-align: center">Skills</h2>
             <div class="row">
                 <div class="col-sm-4">
@@ -175,80 +177,61 @@
             </div>
         </div>
     </section>
-    <section id="community">
-        <div class="container">
-            <h2 style="text-align: center">Community Service</h2>
 
+    <section id="Projects">
+        <div class="container reveal">
+            <h2 style="text-align: center">Projects</h2>
             <div class="row align-items-center">
-                <div class="col-xs-2">
-                    <img src="images/kaiser.jpg" class="img-fluid rounded-circle" alt="Responsive image" />
+                <div class="col" style="margin-left: 15px;">
+                    <img src="images/pnuemonia.png" alt="Pneumonia project" />
                 </div>
-                <div class="col-xs-10">
-                    <h4>Kaiser Permanante</h4>
-                    <h6>Hospital Community Service</h6>
-                    <p>Aug 2022 - Present · 1 yr 2 mos<br />Health</p>
+                <div class="col-12 col-md-6 order-md-2">
+                    <h4>AI Model for Early Pneumonia Detection</h4>
+                    <p>
+                        Developed an AI model that could detect pneumonia at its earliest
+                        stages. </p>
+                    <p class="date">Dec 2022</p>
                 </div>
+                <div class="col col-md-4 order-md-3">
+                    <img class="zoom" src="images/pnue.PNG" alt="Pneumonia project"
+                        onclick="openModal('images/pnue.PNG')" />
+                </div>
+            </div>
+            <div id="shdw" class="row align-items-center">
+                <div class="col " style="margin-left: 15px;">
+                    <img style="background: white;" src="images/sleep1.png" alt="Sleep study" />
+                </div>
+                <div class="col-12 col-md-6 order-md-2">
+                    <h4>How does Less Sleep Affect the Body?</h4>
+                    <p>
+                        Researched the effects of less sleep on the body.
+                    <p class="date">June 2021 - July 2021</p>
+                    </p>
+                </div>
+                <div class="col col-md-4 order-md-3">
+                    <img class="zoom" src="images/sleep.png" alt="Sleep project"
+                        onclick="openModal('images/sleep.png')" />
+                </div>
+            </div>
 
-                <div class="col-xs-2">
-                    <img src="images/rwd.jpg" alt="Responsive image" />
+            <div id="shdw" class="row align-items-center">
+                <div class="col" style="margin-left: 15px;">
+                    <img style="background: white;" src="images/computer.png" alt="Computer Science" />
                 </div>
-                <div class="col-xs-10">
-                    <h4>Read Write Discover</h4>
-                    <h6>Operations Generalist</h6>
-                    <p>Oct 2022 - Present · 1 yr<br />Education</p>
-                    <a target="_blank" href="https://www.readwritediscover.org/our-team">RWD Team</a>
+                <div class="col-12 col-md-6 order-md-2">
+                    <h4>Gaming App - AP Computer Science</h4>
+                    <p class="date">Aug 2020 - May 2021</p>
                 </div>
-
-                <div class="col-xs-2">
-                    <img src="images/sacred.jpg" class="img-fluid rounded-circle" alt="Responsive image" />
-                </div>
-                <div class="col-xs-10">
-                    <h4>Sacred Heart Community Service</h4>
-                    <h6>Student Volunteer</h6>
-                    <p>Sep 2021 - Present · 2 yrs 1 mo<br />Poverty Alleviation</p>
-                </div>
-
-                <div class="col-xs-2">
-                    <img src="images/place.jpg" class="img-fluid rounded-circle" alt="Responsive image" />
-                </div>
-                <div class="col-xs-10">
-                    <h4>The Music Place, Inc</h4>
-                    <h6>Volunteer</h6>
-                    <p>Jun 2021 - Jul 2022 · 1 yr 2 mos<br /></p>
-                </div>
-
-                <div class="col-xs-2">
-                    <img src="images/math.jpg" alt="Responsive image" />
-                </div>
-                <div class="col-xs-10">
-                    <h4>Math Club Tutor</h4>
-                    <h6>Ida Price Middle School</h6>
-                    <p>Jun 2020 - Jun 2021 · 1 yr 1 mo<br />Education</p>
-                </div>
-
-                <div class="col-xs-2">
-                    <img src="images/plus.jpg" alt="Responsive image" />
-                </div>
-                <div class="col-xs-10">
-                    <h4>American Red Cross</h4>
-                    <h6>Student Volunteer</h6>
-                    <p>Aug 2022 - Present · 1 yr 2 mos<br />Health</p>
-
-                </div>
-                <div class="col-xs-2">
-                    <img src="images/totor.jpg" class="img-fluid rounded-circle" alt="Responsive image" />
-                </div>
-                <div class="col-xs-10">
-                    <h4>Learn To Be</h4>
-                    <h6>Student Tutor</h6>
-                    <p>Aug 2021 - Aug 2022 · 1 yr 1 mo <br /> Education</p>
+                <div class="col col-md-4 order-md-3">
+                    <img class="zoom" style="margin-top: 25px" src="images/science.jpeg" alt="CS project"
+                        onclick="openModal('images/science.jpeg')" />
                 </div>
             </div>
         </div>
     </section>
 
     <section id="Awards">
-        <div class="container">
+        <div class="container reveal">
             <h2 style="text-align: center">Awards</h2>
 
             <div class="row align-items-center">
@@ -260,8 +243,8 @@
                     <p>Issued by President of the United States <br /> Aug 2023</p>
                 </div>
                 <div class="col col-md-4 order-md-3">
-                    <img class="zoom" src="images/president-p.jpg" alt="President Award"
-                        onclick="openModal('images/president-p.jpg')" />
+                    <img class="zoom" src="images/president-p.jpg" class="img-fluid rounded-circle"
+                        alt="President Award" onclick="openModal('images/president-p.jpg')" />
                 </div>
             </div>
             <div id="shdw" class="row align-items-center">
@@ -273,7 +256,7 @@
                     <p>Associated with Branham High School<br />jul 2023</p>
                 </div>
                 <div class="col col-md-4 order-md-3">
-                    <img class="zoom" src="images/ap-schol-p.png" alt="AP scholors"
+                    <img class="zoom" src="images/ap-schol-p.png" class="img-fluid rounded-circle" alt="AP scholors"
                         onclick="openModal('images/ap-schol-p.png')" />
                 </div>
             </div>
@@ -287,7 +270,7 @@
                     <p>Associated with Branham High School<br />Mar 2023</p>
                 </div>
                 <div class="col col-md-4 order-md-3">
-                    <img class="zoom" src="images/shubert.jpeg" alt="Principal Award"
+                    <img class="zoom" src="images/shubert.jpeg" class="img-fluid rounded-circle" alt="Principal Award"
                         onclick="openModal('images/shubert.jpeg')" />
                 </div>
             </div>
@@ -311,8 +294,8 @@
                     <p>Issued by National Honor Society <br />Jan 2022</p>
                 </div>
                 <div class="col col-md-4 order-md-3">
-                    <img class="zoom" src="images/nhs.jpeg" alt="National HighSchool Scholors"
-                        onclick="openModal('images/nhs.jpeg')" />
+                    <img class="zoom" src="images/nhs.jpeg" class="img-fluid rounded-circle"
+                        alt="National HighSchool Scholors" onclick="openModal('images/nhs.jpeg')" />
                 </div>
             </div>
             <div id="shdw" class="row align-items-center">
@@ -325,8 +308,8 @@
 
                 </div>
                 <div class="col col-md-4 order-md-3">
-                    <img class="zoom" src="images/royal.jpeg" alt="Royal Conservatory Piano"
-                        onclick="openModal('images/royal.jpeg')" />
+                    <img class="zoom" src="images/royal.jpeg" class="img-fluid rounded-circle"
+                        alt="Royal Conservatory Piano" onclick="openModal('images/royal.jpeg')" />
                 </div>
             </div>
             <div id="shdw" class="row align-items-center">
@@ -365,12 +348,85 @@
         </div>
     </section>
 
+
+    <section id="community">
+        <div class="container reveal">
+            <h2 style="text-align: center">Community Service</h2>
+
+            <div class="row align-items-center">
+                <div class="col-xs-2">
+                    <img src="images/kaiser.jpg" class="img-fluid rounded-circle" alt="Responsive image" />
+                </div>
+                <div class="col-xs-10">
+                    <h4>Kaiser Permanante</h4>
+                    <h6>Hospital Community Service</h6>
+                    <p>Aug 2022 - Present · 1 yr 2 mos<br />Health</p>
+                </div>
+
+                <div class="col-xs-2">
+                    <img src="images/rwd.jpg" class="img-fluid rounded-circle" alt="Responsive image" />
+                </div>
+                <div class="col-xs-10">
+                    <h4>Read Write Discover</h4>
+                    <h6>Operations Generalist</h6>
+                    <p>Oct 2022 - Present · 1 yr<br />Education</p>
+                    <a target="_blank" href="https://www.readwritediscover.org/our-team">RWD Team</a>
+                </div>
+
+                <div class="col-xs-2">
+                    <img src="images/sacred.jpg" class="img-fluid rounded-circle" alt="Responsive image" />
+                </div>
+                <div class="col-xs-10">
+                    <h4>Sacred Heart Community Service</h4>
+                    <h6>Student Volunteer</h6>
+                    <p>Sep 2021 - Present · 2 yrs 1 mo<br />Poverty Alleviation</p>
+                </div>
+
+                <div class="col-xs-2">
+                    <img src="images/place.jpg" class="img-fluid rounded-circle" alt="Responsive image" />
+                </div>
+                <div class="col-xs-10">
+                    <h4>The Music Place, Inc</h4>
+                    <h6>Volunteer</h6>
+                    <p>Jun 2021 - Jul 2022 · 1 yr 2 mos<br /></p>
+                </div>
+
+                <div class="col-xs-2">
+                    <img src="images/math.jpg" class="img-fluid rounded-circle" alt="Responsive image" />
+                </div>
+                <div class="col-xs-10">
+                    <h4>Math Club Tutor</h4>
+                    <h6>Ida Price Middle School</h6>
+                    <p>Jun 2020 - Jun 2021 · 1 yr 1 mo<br />Education</p>
+                </div>
+
+                <div class="col-xs-2">
+                    <img src="images/plus.jpg" class="img-fluid rounded-circle" alt="Responsive image" />
+                </div>
+                <div class="col-xs-10">
+                    <h4>American Red Cross</h4>
+                    <h6>Student Volunteer</h6>
+                    <p>Aug 2022 - Present · 1 yr 2 mos<br />Health</p>
+
+                </div>
+                <div class="col-xs-2">
+                    <img src="images/totor.jpg" class="img-fluid rounded-circle" alt="Responsive image" />
+                </div>
+                <div class="col-xs-10">
+                    <h4>Learn To Be</h4>
+                    <h6>Student Tutor</h6>
+                    <p>Aug 2021 - Aug 2022 · 1 yr 1 mo <br /> Education</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="Experience">
-        <div class="container">
+        <div class="container reveal">
             <h2 style="text-align: center">Experience</h2>
             <div class="row align-items-center">
                 <div class="col-xs-2">
-                    <img src="images/clg.jpg" alt="Responsive image" />
+                    <img src="images/clg.jpg" class="img-fluid rounded-circle" alt="Responsive image" />
                 </div>
                 <div class="col-xs-10">
                     <h4>Campbell Union High School District</h4>
@@ -386,13 +442,8 @@
                     <h5>Superintendent student advisory council member</h5>
                     <p>Aug 2022-Aug2023</p>
                 </div>
-                <div class="col col-md-4 order-md-3">
-                    <img class="zoom" src="images/shubert.jpeg" alt="Principal Award"
-                        onclick="openModal('images/shubert.jpeg')" />
-                </div>
-
                 <div class="col-xs-2">
-                    <img src="images/piano.jpg" alt="Responsive image" />
+                    <img src="images/piano.jpg" class="img-fluid rounded-circle" alt="Responsive image" />
                 </div>
                 <div class="col-xs-10">
                     <h4>Peer Advocate council member</h4>
@@ -404,7 +455,7 @@
                     <p>Aug 2023 - Present</p>
                 </div>
                 <div class="col-xs-2">
-                    <img src="images/piano1.jpg" alt="Responsive image" />
+                    <img src="images/piano1.jpg" class="img-fluid rounded-circle" alt="Responsive image" />
                 </div>
                 <div class="col-xs-10">
                     <h4>Piano teacher</h4>
@@ -414,10 +465,9 @@
                         <li>Certified by Royal Conservatory of Music</li>>
                         <li>As receptionist, take calls, direct students to lessons, and answer customer questions.</li>>
                     <p>Nov 2022-Present</p>
-                    <br />
                 </div>
                 <div class="col-xs-2">
-                    <img src="images/pannel.jpg" alt="Responsive image" />
+                    <img src="images/pannel.jpg" class="img-fluid rounded-circle" alt="Responsive image" />
                 </div>
                 <div class="col-xs-10">
                     <h4>Tutor & Operations Generalist</h4>
@@ -433,12 +483,12 @@
     </section>
 
     <section id="Certifications">
-        <div class="container">
+        <div class="container reveal">
             <h2 style="text-align: center">Certifications</h2>
 
             <div class="row align-items-center">
                 <div class="col-xs-2">
-                    <img src="images/john.jpg" alt="Responsive image" />
+                    <img src="images/john.jpg" class="img-fluid rounded-circle" alt="Responsive image" />
                 </div>
                 <div class="col-xs-10">
                     <h4>Summary Statistics in Public Health</h4>
@@ -448,13 +498,13 @@
                 </div>
 
                 <div class="col-xs-2">
-                    <img src="images/health.jpg" alt="Responsive image" />
+                    <img src="images/health.jpg" class="img-fluid rounded-circle" alt="Responsive image" />
                 </div>
                 <div class="col-xs-10">
                     <h4>CPR (CPR)</h4>
                     <h6>American Heart Association</h6>
                     <p>Issued Jun 2023<br /></p>
-                    <a href="javascript:void(0)" onclick="openModal('images/ahs.jpg')">Show Credential</a>                    
+                    <a href="javascript:void(0)" onclick="openModal('images/ahs.jpg')">Show Credential</a>
                 </div>
 
                 <div class="col-xs-2">
@@ -464,7 +514,7 @@
                     <h4>Certified Nursing Assistant</h4>
                     <h6>California Department of Public Health</h6>
                     <p>Issued Jun 2023<br /></p>
-                    <a href="javascript:void(0)" onclick="openModal('images/cna-p.jpg')">Show Credential</a>                    
+                    <a href="javascript:void(0)" onclick="openModal('images/cna-p.jpg')">Show Credential</a>
                 </div>
 
                 <div class="col-xs-2">
@@ -477,7 +527,7 @@
                     <a href="javascript:void(0)" onclick="openModal('images/inspirit-p.jpg')">Show Credential</a>
                 </div>
                 <div class="col-xs-2">
-                    <img src="images/john.jpg" alt="Responsive image" />
+                    <img src="images/john.jpg" class="img-fluid rounded-circle" alt="Responsive image" />
                 </div>
                 <div class="col-xs-10">
                     <h4>Essential Epidemiologic Tool for Public Health Practice</h4>
@@ -487,7 +537,7 @@
                 </div>
 
                 <div class="col-xs-2">
-                    <img src="images/john.jpg" alt="Responsive image" />
+                    <img src="images/john.jpg" class="img-fluid rounded-circle" alt="Responsive image" />
                 </div>
                 <div class="col-xs-10">
                     <h4>Fundamental Neuroscience for Neuroimaging</h4>
@@ -496,7 +546,7 @@
                     <a href="javascript:void(0)" onclick="openModal('images/image.png')">Show Credential</a>
                 </div>
                 <div class="col-xs-2">
-                    <img src="images/america.jpg" alt="Responsive image" />
+                    <img src="images/america.jpg" class="img-fluid rounded-circle" alt="Responsive image" />
                 </div>
                 <div class="col-xs-10">
                     <h4>Online CPR/AED and First Aid Combo Course</h4>
@@ -506,23 +556,25 @@
             </div>
         </div>
     </section>
-    
+
     <section id="MedicalResearch">
-        <div class="container">
+        <div class="container reveal">
             <h2 style="text-align: center">Medical & Research</h2>
             <div class="row align-items-center">
                 <div class="col-xs-2">
-                    <img src="images/kaiser.jpg" alt="Responsive image" />
+                    <img src="images/kaiser.jpg" class="img-fluid rounded-circle" alt="Responsive image" />
                 </div>
                 <div class="col-xs-10">
                     <h4>Physician Shadowing at Kaiser Permanente, San Jose</h4>
-                    <p>Shadowed Physicians and observed 6-7 well and sick patients per day in the newborn, teen, and child clinics.</p>
-                    <p>Conducted informational interviews with pediatricians to learn about diagnosing and doctor-patient interactions.</p>
+                    <p>Shadowed Physicians and observed 6-7 well and sick patients per day in the newborn, teen, and
+                        child clinics.</p>
+                    <p>Conducted informational interviews with pediatricians to learn about diagnosing and
+                        doctor-patient interactions.</p>
                     <p>Additionally, shadowed LVNS, Medical Assistants, RNs, Nurse Practitioners</p>
                     <br />
                 </div>
                 <div class="col-xs-2">
-                    
+
                 </div>
                 <div class="col-xs-10">
                     <h4>Shadowing in Emergency Medicine at Safe Emergency Hospital, India</h4>
@@ -531,7 +583,7 @@
                     <br />
                 </div>
                 <div class="col-xs-2">
-                    <img src="images/kgh.jpeg" alt="Responsive image" />
+                    <img src="images/kgh.jpeg" class="img-fluid rounded-circle" alt="Responsive image" />
                 </div>
                 <div class="col-xs-10">
                     <h4>Lab Shadowing at Government General Hospital, India </h4>
@@ -540,36 +592,43 @@
                     <br />
                 </div>
                 <div class="col-xs-2">
-                    <img src="images/public.jpg" alt="Responsive image" />
+                    <img src="images/pannel.jpg" class="img-fluid rounded-circle" alt="Responsive image" />
                 </div>
                 <div class="col-xs-10">
                     <h4>Certified Nursing Assistant </h4>
-                    <p>License issued by <a target="_blank" href="https://cvl.cdph.ca.gov/DetailPage.aspx?cert_holder_id=697918">California Department of Public Health</a> to provide nursing care</p>            
-                        <p> Completed training and received merit award</p>
-                        <p> Clinical experience in senior care facilities</p>
-                        <p> &nbsp; &nbsp; &nbsp; &nbsp;1.Valley House Rehabilitation Center</p>
-                        <p>&nbsp; &nbsp; &nbsp; &nbsp;2.Saratoga Villas</p>
-                    <p>Hands-on experience feeding, dressing, bathing, lifting, taking vitals, and assisting patients in many other ways</p>
+                    <p>License issued by <a target="_blank"
+                            href="https://cvl.cdph.ca.gov/DetailPage.aspx?cert_holder_id=697918">California Department
+                            of Public Health</a> to provide nursing care</p>
+                    <p> Completed training and received merit award</p>
+                    <p> Clinical experience in senior care facilities</p>
+                    <p> &nbsp; &nbsp; &nbsp; &nbsp;1.Valley House Rehabilitation Center</p>
+                    <p>&nbsp; &nbsp; &nbsp; &nbsp;2.Saratoga Villas</p>
+                    <p>Hands-on experience feeding, dressing, bathing, lifting, taking vitals, and assisting patients in
+                        many other ways</p>
                     <br />
                 </div>
             </div>
             <h2 style="text-align: center">Research</h2>
             <div class="row align-items-center">
                 <div class="col-xs-2">
-                    <img src="images/polygence.png" alt="Responsive image" />
+                    <img src="images/polygence.png" class="img-fluid rounded-circle" alt="Responsive image" />
                 </div>
                 <div class="col-xs-10">
                     <h4><a target="_blank" href="https://www.polygence.org/scholars/hasika-oggi"> Polygence</a></h4>
                     <h6>Online Research Academy</h6>
                     <p>Research conducted under PhD candidate from UC Berkeley</p>
-                    <p>Project Title: An investigation of vaccine candidates for the treatment of leprosy and their efficacy and accessibility</p>
-                    <p>Published under ResearchGate <a target="_blank" href="https://www.researchgate.net/publication/373415965_Investigation_of_Vaccine_Candidates_For_the_Treatment_of_Leprosy_and_Their_Efficacy_and_Accessibility">Show</a></p>                    
-                    <a href="javascript:void(0)" onclick="openModal('images/polygence-p.jpg')">Show</a>
+                    <p>Project Title: An investigation of vaccine candidates for the treatment of leprosy and their
+                        efficacy and accessibility</p>
+                    <p>Published under ResearchGate <a target="_blank"
+                            href="https://www.researchgate.net/publication/373415965_Investigation_of_Vaccine_Candidates_For_the_Treatment_of_Leprosy_and_Their_Efficacy_and_Accessibility">Show</a>
+                    </p>
+                    <a href="javascript:void(0)" onclick="openModal('images/polygence-p.jpg')">Show</a> <br/>
+                    <!--<a href="newpage.html" target="_blank">click here</a>-->
                     <br />
                 </div>
 
                 <div class="col-xs-2">
-                    <img src="images/CCIR.png" alt="Responsive image" />
+                    <img src="images/CCIR.png" class="img-fluid rounded-circle" alt="Responsive image" />
                 </div>
                 <div class="col-xs-10">
                     <h4>CCIR (Cambridge Center for Institutional Research)</h4>
@@ -581,25 +640,28 @@
                 </div>
 
                 <div class="col-xs-2">
-                    <img src="images/inspirit.png" alt="Responsive image" />
+                    <img src="images/inspirit.png" class="img-fluid rounded-circle" alt="Responsive image" />
                 </div>
                 <div class="col-xs-10">
                     <h4>Inspirit AI</h4>
                     <h6>Online Research</h6>
-                    <p>Worked with a cohort mentored by a Stanford postgraduate to code an AI model that detects pneumonia at early stages from X-ray data.</p> 
-                    <p>Utilizing Different Deep Learning Models to Accurately Detect Pneumonia in Chest X-ray Images (Manuscript submitted for publication)</p>
+                    <p>Worked with a cohort mentored by a Stanford postgraduate to code an AI model that detects
+                        pneumonia at early stages from X-ray data.</p>
+                    <p>Utilizing Different Deep Learning Models to Accurately Detect Pneumonia in Chest X-ray Images
+                        (Manuscript submitted for publication)</p>
                     <a href="javascript:void(0)" onclick="openModal('images/inspirit-p.jpg')">Show</a>
                     <br />
                 </div>
 
                 <div class="col-xs-2">
-                    <img src="images/john.jpg" alt="Responsive image" />
+                    <img src="images/john.jpg" class="img-fluid rounded-circle" alt="Responsive image" />
                 </div>
                 <div class="col-xs-10">
                     <h4>Johns Hopkins School of Arts, Sciences and Engineering</h4>
                     <h6>Online Research</h6>
-                    <p>Participated in JHU’s Medical Intensive Program focused on body systems.</p> 
-                    <p>After multiple online labs, created final research presentation on detrimental effects of sleep deprivation on the human body</p>
+                    <p>Participated in JHU’s Medical Intensive Program focused on body systems.</p>
+                    <p>After multiple online labs, created final research presentation on detrimental effects of sleep
+                        deprivation on the human body</p>
                     <br />
                 </div>
 
@@ -607,59 +669,6 @@
 
         </div>
     </section>
-
-       <section id="Projects">
-        <div class="container">
-            <h2 style="text-align: center">Projects</h2>
-            <div class="row align-items-center">
-                <div class="col" style="margin-left: 15px;">
-                    <img src="images/pnuemonia.png" alt="Pneumonia project" />
-                </div>
-                <div class="col-12 col-md-6 order-md-2">
-                    <h4>AI Model for Early Pneumonia Detection</h4>
-                    <p>
-                        Developed an AI model that could detect pneumonia at its earliest
-                        stages. </p>
-                    <p class="date">Dec 2022</p>
-                </div>
-                <div class="col col-md-4 order-md-3">
-                    <img class="zoom" src="images/pnue.PNG" alt="Pneumonia project"
-                        onclick="openModal('images/pnue.PNG')" />
-                </div>
-            </div>
-            <div id="shdw" class="row align-items-center">
-                <div class="col " style="margin-left: 15px;">
-                    <img src="images/sleep1.png" alt="Sleep study" />
-                </div>
-                <div class="col-12 col-md-6 order-md-2">
-                    <h4>How does Less Sleep Affect the Body?</h4>
-                    <p>
-                        Researched the effects of less sleep on the body.
-                    <p class="date">June 2021 - July 2021</p>
-                    </p>
-                </div>
-                <div class="col col-md-4 order-md-3">
-                    <img class="zoom" src="images/sleep.png" alt="Sleep project"
-                        onclick="openModal('images/sleep.png')" />
-                </div>
-            </div>
-
-            <div id="shdw" class="row align-items-center">
-                <div class="col" style="margin-left: 15px;">
-                    <img src="images/computer.png" alt="Computer Science" />
-                </div>
-                <div class="col-12 col-md-6 order-md-2">
-                    <h4>Gaming App - AP Computer Science</h4>
-                    <p class="date">Aug 2020 - May 2021</p>
-                </div>
-                <div class="col col-md-4 order-md-3">
-                    <img class="zoom" style="margin-top: 25px" src="images/science.jpeg" alt="CS project"
-                        onclick="openModal('images/science.jpeg')" />
-                </div>
-            </div>
-        </div>
-    </section>
-
     <div id="myModal" class="modal">
         <span class="close-modal-button" onclick="closeModal()">&times;</span>
         <img class="modal-content" id="modalImg">
