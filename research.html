@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Hasika Oggi, Hasika, HasikaOggi" />
+    <title>Hasika Oggi</title>
+    <!-- Include Bootstrap 5 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <!-- Custom CSS and JS for additional styling and functionality -->
+    <link rel="stylesheet" href="custom.css" />
+</head>
+
+<body class="light-mode">
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <div class="move">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </div>
+                <a class="nav-link" href="#MedicalResearch">Medical & Research</a>
+                <i id="moon-icon" class="fas fa-moon"></i> <!-- Moon icon for dark mode -->
+                <i id="sun-icon" class="fas fa-sun" style="display: none;"></i> <!-- Sun icon for light mode -->
+
+            </div>
+
+        </div>
+    </nav>
+    <section id="Home">
+        <div class="container space">
+            <div class="row">
+                <div class="col-sm-6">
+                        <p>
+                        An Investigation of Vaccine Candidates for the Treatment of Leprosy and Their Efficacy and Accessibility was a STEM Conference Talk delivered live by Hasika Oggi at Polygence’s 9th Symposium of Rising Scholars in September 2023.</p>
+                        <p>
+                        </p>
+                </div>
+                <div class="col-sm-4">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/RjhyuPHGEOY?si=vkA3bAwa4xhjsAjf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <div id="myModal" class="modal">
+        <span class="close-modal-button" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+    <footer> </footer>
+
+    <!-- Include Bootstrap 5 JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="custom.js"></script>
+    <!-- Include custom JS if any -->
+</body>
+
+</html>
