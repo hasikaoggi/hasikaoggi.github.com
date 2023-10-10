@@ -360,6 +360,38 @@ body {
 }
 
 @media (min-width: 768px) {
+  #Certifications .col-md-4 img {
+    height: 100px;
+    width: 100px;
+    margin-left: 20px;
+    }
+
+  #Certifications .a img {
+    height: 50px;
+    width: 50px;
+    margin-left: 15px;
+  }
+
+  #Certifications .col-md-6 {
+    margin-right: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  #Certifications .col-md-4 img {
+    height: 100px;
+    width: 100px;
+    margin-left: 100px;
+  }
+
+  #Certifications .a img {
+    height: 50px;
+    width: 50px;
+    margin-left: 125px;
+  }
+}
+
+@media (min-width: 768px) {
   #Experience .col-md-4 img {
     height: 100px;
     width: 100px;
