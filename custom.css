@@ -12,8 +12,8 @@ section {
 }
 
 .col-xs-10 h4 {
-  color: #34495e;
-  /* Dark blue color */
+  color:rgb(30, 25, 40);
+  /*Dark blue color */
   font-size: 1.5em;
   font-weight: 600;
   margin-top: 20px;
@@ -47,12 +47,12 @@ h2 {
   text-align: center;
   font-size: 2em;
   margin-bottom: 50px;
-  color: #2c3e50;
+  color: rgb(30, 25, 40);
   /* Dark blueish color for the main heading */
 }
 
 h4 {
-  color: #34495e;
+  color: rgb(30, 25, 40);
   /* Dark blue color */
   font-size: 1.5em;
   font-weight: 600;
@@ -285,11 +285,11 @@ body {
 }
 
 /* Style for the first paragraph */
-#Home p {
+/*#Home p {
   font-family: 'Arial', sans-serif;
   font-size: 16px;
   color: #333;
-}
+}*/
 
 /* Style for the <strong> element within the first paragraph */
 #Home p strong {
@@ -297,7 +297,7 @@ body {
   color: #2C3E50;
 }
 
-/* Style for the <em> element within the first paragraph */
+ /*Style for the <em> element within the first paragraph */
 #Home p em {
   font-style: italic;
   color: green;
@@ -306,7 +306,7 @@ body {
 /* Style for the second paragraph */
 /* (Reusing the general <p> style, but you can specify it separately if needed) */
 
-/* Style for the <strong> element within the second paragraph */
+/*Style for the <strong> element within the second paragraph */
 #Home p:nth-of-type(2) strong {
   font-weight: bold;
   color: #2C3E50;
@@ -358,7 +358,106 @@ body {
     margin-left: 125px;
   }
 }
+/* Add Bootstrap classes for centering the image */
+.hasika {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25vh;
+  width: 25vh;
+}
+
+/* Define your custom animation */
+@keyframes zoomIn {
+  0% {
+      transform: scale(0);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+/* Apply the animation to the image */
+#animated-image {
+  animation: zoomIn 2s ease-in-out;
+}
+.hello{
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.about{
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+/* Common styles for both light and dark modes */
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* CSS for Light Mode */
+.light-mode {
+  background-color: white; /* Set your light mode background color */
+  color: black; /* Set your light mode text color */
+}
+
+/* CSS for Dark Mode */
+.dark-mode {
+  background-color: black; /* Set your dark mode background color */
+  color: white; /* Set your dark mode text color */
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
+
 .blur-background {
   filter: blur(5px); /* You can adjust the blur amount as needed */
   pointer-events: none; /* Prevent clicks on the blurred background */
 }
+@media (min-width: 768px) {
+  .navbar-nav i{
+   margin-left: 400px;
+   margin-top: 10px;
+  }
+ }
+
+
+/* CSS for Light Mode */
+.light-mode {
+  background-color: white; /* Set your light mode background color */
+  color: black; /* Set your light mode text color */
+}
+
+/* CSS for Dark Mode */
+.dark-mode {
+  background-color:  rgb(45, 41, 41); /* Set your dark mode background color */
+  color: white; /* Set your dark mode text color */
+}
+
+
+@media (min-width: 768px) {
+  .navbar-nav i{
+   margin-left: 350px;
+   margin-top: 10px;
+  }
+ }
+ 
