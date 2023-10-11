@@ -204,7 +204,7 @@ moonIcon.addEventListener('click', () => {
 
     // Set h4 elements to green in dark mode
     h4Elements.forEach((h4) => {
-        h4.style.color = '#A8D8B9';
+        h4.style.color = '#33b38b';
     });
 
     // Set paragraphs to green in dark mode
