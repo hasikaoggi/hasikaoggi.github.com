@@ -181,22 +181,35 @@ body {
     margin-left: -100px;
   }
 
-  #Projects .col-md-4 img {
-    width: 100px;
+  #Projects .col-md-6 img {
+    width: 50px;
+    height: 50px;
+    margin-left: 15px;
+  }
+  #Projects .ml-3{
+    margin-left:120px;
+  }
+  #Projects .col-md-6 .abc {
     height: 100px;
-    margin-left: 25px;
+    width: 100px;
+    margin-left: 250px;
   }
 }
 
 @media (max-width: 768px) {
-  #Projects img {
-    margin-left: 125px;
-  }
 
-  #Projects .col-md-4 img {
-    width: 100px;
+  #Projects .col-md-6 img {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+  }
+  #Projects .ml-3{
+    margin-left:20px;
+  }
+  #Projects .col-md-6 .abc {
     height: 100px;
-    margin-left: 100px;
+    width: 100px;
+    margin-left: 120px;
   }
 
   #shdw {
@@ -332,66 +345,68 @@ width: 100px;
 }
 
 @media (min-width: 768px) {
-  #Awards .col-md-4 img {
-    height: 100px;
-    width: 100px;
-    margin-left: 20px;
-    }
-
-  #Awards .a img {
-    height: 50px;
+  
+  #Awards .col-md-6 img {
     width: 50px;
+    height: 50px;
     margin-left: 15px;
   }
-
-  #Awards .col-md-6 {
-    margin-right: 100px;
+  #Awards .ml-3{
+    margin-left:10px;
+  }
+  #Awards .col-md-6 .abc {
+    height: 100px;
+    width: 100px;
+    margin-left: 250px;
   }
 }
 
 @media (max-width: 768px) {
-  #Awards .col-md-4 img {
+  #Awards .col-md-6 img {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+  }
+  #Awards .ml-3{
+    margin-left:20px;
+  }
+  #Awards .col-md-6 .abc {
     height: 100px;
     width: 100px;
-    margin-left: 100px;
-  }
-
-  #Awards .a img {
-    height: 50px;
-    width: 50px;
-    margin-left: 125px;
+    margin-left: 120px;
   }
 }
+
 
 @media (min-width: 768px) {
-  #Certifications .col-md-4 img {
-    height: 100px;
-    width: 100px;
-    margin-left: 20px;
-    }
-
-  #Certifications .a img {
-    height: 50px;
+  #Certifications .col-md-6 img {
     width: 50px;
+    height: 50px;
     margin-left: 15px;
   }
-
-  #Certifications .col-md-6 {
-    margin-right: 100px;
+  #Certifications .ml-3{
+    margin-left:10px;
+  }
+  #Certifications .col-md-6 .abc {
+    height: 100px;
+    width: 100px;
+    margin-left: 250px;
   }
 }
 
 @media (max-width: 768px) {
-  #Certifications .col-md-4 img {
+  #Certifications .col-md-6 img {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+  }
+  #Certifications .ml-3{
+    margin-left:20px;
+  }
+  #Certifications .col-md-6 .abc {
     height: 100px;
     width: 100px;
-    margin-left: 100px;
-  }
-
-  #Certifications .a img {
-    height: 50px;
-    width: 50px;
-    margin-left: 125px;
+    margin-left: 120px;
   }
 }
 
@@ -413,6 +428,7 @@ width: 100px;
   #Experience .col-md-6 {
     margin-right: 100px;
   }
+  
 }
 @media (max-width: 768px) {
   #Experience .col-md-4 img {
@@ -426,6 +442,7 @@ width: 100px;
     width: 50px;
     margin-left: 125px;
   }
+  
 }
 #MedicalResearch .col-md-4 img{
  height: 100px;
@@ -527,7 +544,7 @@ body {
 
 /* CSS for Dark Mode */
 .dark-mode {
-  background-color:  rgb(45, 41, 41); /* Set your dark mode background color */
+  background-color:  rgb(56, 53, 53); /* Set your dark mode background color */
   color: white; /* Set your dark mode text color */
 }
 
