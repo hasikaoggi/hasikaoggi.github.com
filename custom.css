@@ -153,7 +153,7 @@ body {
 }
 
 .date {
-  color: rgb(79, 78, 78);
+
   font-weight: 500;
 }
 
@@ -501,17 +501,7 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-/* CSS for Light Mode */
-.light-mode {
-  background-color: white; /* Set your light mode background color */
-  color: black; /* Set your light mode text color */
-}
 
-/* CSS for Dark Mode */
-.dark-mode {
-  background-color: black; /* Set your dark mode background color */
-  color: white; /* Set your dark mode text color */
-}
 
 .reveal{
   position: relative;
@@ -544,10 +534,12 @@ body {
 
 /* CSS for Dark Mode */
 .dark-mode {
-  background-color:  rgb(56, 53, 53); /* Set your dark mode background color */
+  background-color:  rgb(53, 50, 50); /* Set your dark mode background color */
   color: white; /* Set your dark mode text color */
 }
-
+.dark-mode .container {
+  background-color:rgb(61, 60,) /* Your desired container background color for dark mode */;
+}
 
 @media (min-width: 768px) {
   .navbar-nav i{
@@ -557,3 +549,13 @@ body {
   }
  }
  
+ @media (max-width: 768px) {
+  .navbar-nav a{
+    margin-left: 10px;
+  }
+  .navbar-nav i{
+    margin-left: 10px;
+  }
+ }
+ 
+

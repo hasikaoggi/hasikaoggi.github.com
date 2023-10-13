@@ -26,27 +26,7 @@ document.addEventListener("scroll", function () {
   });
 });
 
-// Function to open the modal and display the image
-// function openModal(imageSrc) {
-//   var modal = document.getElementById("myModal");
-//   var modalImg = document.getElementById("modalImg");
-//   modal.style.display = "block";
-//   modalImg.src = imageSrc;
-// }
 
-// // Function to close the modal
-// function closeModal() {
-//   var modal = document.getElementById("myModal");
-//   modal.style.display = "none";
-// }
-
-// // Close the modal if the user clicks outside of it
-// window.onclick = function (event) {
-//   var modal = document.getElementById("myModal");
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//   }
-// }
 function openModal(imageSrc) {
   var modal = document.getElementById("myModal");
   var modalImg = document.getElementById("modalImg");
@@ -79,95 +59,6 @@ document.addEventListener('keydown', (event) => {
   }
 });
 
-
-const moonIcon = document.getElementById('moon-icon');
-const sunIcon = document.getElementById('sun-icon');
-const headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
-const h2Elements = document.querySelectorAll('h2');
-const h4Elements = document.querySelectorAll('h4');
-const pElements = document.querySelectorAll('#Home p'); // Assuming 'Home' is the ID of the container for your paragraphs.
-const strongElements = document.querySelectorAll('#Home p strong'); // Select strong elements within 'p' elements.
-
-let isDarkMode = false;
-
-moonIcon.addEventListener('click', () => {
-    document.body.classList.add('dark-mode');
-    document.body.classList.remove('light-mode');
-    headings.forEach((heading) => {
-        heading.style.color = 'white'; // Set your dark mode heading color
-    });
-
-    // Set h2 elements to green in dark mode
-    h2Elements.forEach((h2) => {
-        h2.style.color = '#F08080';
-    });
-
-    // Set h4 elements to green in dark mode
-    h4Elements.forEach((h4) => {
-        h4.style.color = '#A8D8B9';
-    });
-
-    // Set paragraphs to green in dark mode
-    pElements.forEach((p) => {
-        // p.style.color = '#FFDDBB';
-    });
-
-    // Set strong elements within paragraphs to green in dark mode
-    strongElements.forEach((strong) => {
-        strong.style.color = '#33b38b'; // Green color
-    });
-
-    isDarkMode = true;
-    moonIcon.style.display = 'none'; // Hide the sun icon
-    sunIcon.style.display = 'inline'; // Display the moon icon
-    sunIcon.classList.remove('fa-moon');
-    sunIcon.classList.add('fa-sun');
-    sunIcon.style.color = 'black'; // Set the color of the sun icon to black
-});
-
-sunIcon.addEventListener('click', () => {
-    document.body.classList.add('light-mode');
-    document.body.classList.remove('dark-mode');
-    headings.forEach((heading) => {
-        heading.style.color = 'black'; // Set your light mode heading color
-    });
-
-    // Reset h2 elements to their default color in light mode
-    h2Elements.forEach((h2) => {
-        h2.style.color = '';
-    });
-
-    // Reset h4 elements to their default color in light mode
-    h4Elements.forEach((h4) => {
-        h4.style.color = '';
-    });
-
-    // Reset paragraphs to their default color in light mode
-    pElements.forEach((p) => {
-        p.style.color = '';
-    });
-
-    // Reset strong elements within paragraphs to their default color in light mode
-    strongElements.forEach((strong) => {
-        strong.style.color = ''; // Reset to default color
-    });
-
-    isDarkMode = false;
-    sunIcon.style.display = 'none'; // Hide the moon icon
-    moonIcon.style.display = 'inline'; // Display the sun icon
-    moonIcon.classList.remove('fa-sun');
-    moonIcon.classList.add('fa-moon');
-    moonIcon.style.color = 'black'; // Set the color of the moon icon to black
-});
-
-
-// Detect the initial mode (e.g., based on user preferences)
-if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    moonIcon.click(); // If the user prefers dark mode, set it by default
-}
-
-
-
 window.addEventListener('scroll',reveal);
 
 function reveal(){
@@ -188,70 +79,99 @@ function reveal(){
   }
 }
 
+const moonIcon = document.getElementById('moon-icon');
+const sunIcon = document.getElementById('sun-icon');
+const headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+const h2Elements = document.querySelectorAll('h2');
+const h4Elements = document.querySelectorAll('h4');
+const pElements = document.querySelectorAll('#Home p'); // Assuming 'Home' is the ID of the container for your paragraphs.
+const strongElements = document.querySelectorAll('#Home p strong'); // Select strong elements within 'p' elements.
+const greenH5Elements = document.querySelectorAll('h5.green-h5'); // Select <h5> elements with the custom class.
 
+let isDarkMode = false;
 
-moonIcon.addEventListener('click', () => {
+function enableDarkMode() {
     document.body.classList.add('dark-mode');
     document.body.classList.remove('light-mode');
+    
     headings.forEach((heading) => {
-        heading.style.color = 'white'; // Set your dark mode heading color
+        heading.style.color = 'white';
     });
 
-    // Set h2 elements to green in dark mode
     h2Elements.forEach((h2) => {
         h2.style.color = '#ADD8E6';
     });
 
-    // Set h4 elements to green in dark mode
     h4Elements.forEach((h4) => {
         h4.style.color = '#33b38b';
     });
 
-    // Set paragraphs to green in dark mode
     pElements.forEach((p) => {
         p.style.color = 'white';
     });
 
-    isDarkMode = true;
-    moonIcon.style.display = 'none'; // Hide the sun icon
-    sunIcon.style.display = 'inline'; // Display the moon icon
-    sunIcon.classList.remove('fa-moon');
-    sunIcon.classList.add('fa-sun');
-    sunIcon.style.color = 'black'; // Set the color of the sun icon to black
-});
-
-sunIcon.addEventListener('click', () => {
-    document.body.classList.add('light-mode');
-    document.body.classList.remove('dark-mode');
-    headings.forEach((heading) => {
-        heading.style.color = 'black'; // Set your light mode heading color
+    strongElements.forEach((strong) => {
+        strong.style.color = '#33b38b'; // Green color for strong in dark mode
     });
 
-    // Reset h2 elements to their default color in light mode
+    greenH5Elements.forEach((h5) => {
+        h5.style.color = '#33b38b'; // Green color for <h5> with the custom class in dark mode
+    });
+
+    isDarkMode = true;
+}
+
+function enableLightMode() {
+    document.body.classList.add('light-mode');
+    document.body.classList.remove('dark-mode');
+    
+    headings.forEach((heading) => {
+        heading.style.color = 'black';
+    });
+
     h2Elements.forEach((h2) => {
         h2.style.color = '';
     });
 
-    // Reset h4 elements to their default color in light mode
     h4Elements.forEach((h4) => {
         h4.style.color = '';
     });
 
-    // Reset paragraphs to their default color in light mode
     pElements.forEach((p) => {
         p.style.color = '';
     });
 
+    strongElements.forEach((strong) => {
+        strong.style.color = ''; // Reset to default color
+    });
+
+    greenH5Elements.forEach((h5) => {
+        h5.style.color = ''; // Reset to default color for <h5> with the custom class
+    });
+
     isDarkMode = false;
-    sunIcon.style.display = 'none'; // Hide the moon icon
-    moonIcon.style.display = 'inline'; // Display the sun icon
+}
+
+moonIcon.addEventListener('click', () => {
+    enableDarkMode();
+    moonIcon.style.display = 'none';
+    sunIcon.style. display = 'inline';
+    sunIcon.classList.remove('fa-moon');
+    sunIcon.classList.add('fa-sun');
+    sunIcon.style.color = 'black';
+});
+
+sunIcon.addEventListener('click', () => {
+    enableLightMode();
+    sunIcon.style.display = 'none';
+    moonIcon.style.display = 'inline';
     moonIcon.classList.remove('fa-sun');
     moonIcon.classList.add('fa-moon');
-    moonIcon.style.color = 'black'; // Set the color of the moon icon to black
+    moonIcon.style.color = 'black';
 });
 
 // Detect the initial mode (e.g., based on user preferences)
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    moonIcon.click(); // If the user prefers dark mode, set it by default
+    enableDarkMode(); // If the user prefers dark mode, set it by default
 }
 
