@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Hasika Oggi, Hasika, HasikaOggi" />
+    <title>Hasika Oggi</title>
+    <!-- Include Bootstrap 5 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <!-- Custom CSS and JS for additional styling and functionality -->
+    <link rel="stylesheet" href="custom.css" />
+</head>
+<style>
+    @media (min-width: 768px) {
+  .navbar-nav i{
+   margin-left: 1100px;
+   margin-top: 10px;
+  }
+ }
+ 
+ @media (max-width: 768px) {
+    iframe{
+        width: 330px;
+       
+    }
+ }
+</style>
+
+<body class="light-mode">
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <div class="move">
+                    <a class="nav-link" href="index.html">Home</a>
+                </div>
+                <a class="nav-link active" href="#Research">Research</a>
+                <i id="moon-icon" class="fas fa-moon"></i> <!-- Moon icon for dark mode -->
+                <i id="sun-icon" class="fas fa-sun" style="display: none;"></i> <!-- Sun icon for light mode -->
+
+            </div>
+
+        </div>
+    </nav>
+    <section id="Research">
+        <div class="container space">
+            <div class="row">
+                <div class="col-sm-6">
+                    <br>
+                    <p><strong>Cambridge Centre for International Research (CCIR):</strong></p>
+                    <p>
+                        CCIR is a research organisation registered in Cambridge, with an overarching mission to benefit the public by increasing the accessibility of knowledge. Students around the world, in intimate small groups or 1-on-1, work with leading researchers and professors from top US/UK universities to each produce an independent research paper that showcases academic passion and commitment. 
+                    </p>
+                    <p><strong>Research Project: 
+                        Investigation of 6 Vulnerable Strains of MRSA, High Areas of Occurrence for MRSA, and Protein Structure and Function Variants for BlaZ gene.</p></strong>
+                    <p> This research provides a comprehensive examination of MRSA, covering strain vulnerabilities, geographical patterns, and genetic factors related to the BlaZ gene, offering valuable insights for managing MRSA infections.</p>
+                        <p>
+                            <strong>Introduction:</strong>
+                            Methicillin-resistant Staphylococcus aureus (MRSA) is caused by a type of S. aureus thatis resistant to not only methicillin, but also other antibiotics used to treat staph infections (MayoClinic, n.d.). It mainly causes skin infections, but if left untreated, it can result in pneumonia, oreven sepsis (CDC, 2019). MRSA is sometimes fatal, depending on the severity of the infection.Infection with MRSA may occur when healthy individuals touch objects that have beencontaminated by infected people or are carrying the bacteria (Yuen et al., 2015). This includescontact with an infected person as well. Those who are at higher risk for contracting MRSA areathletes, the elderly, daycare and school students, and military personnel in barracks becausethe risk of contracting MRSA increases in areas or activities that involve crowding, skin-to-skincontact, and shared equipment or supplies (Weber, 2009). Every 2 in 100 people carry theMRSA strain and MRSA is highly prevalent in hospitals throughout the world (Harvard Health,2016). In addition, it’s common in regions in East Asia where there is an excessive amount ofantibiotics used to treat staph infections as seen in Figure 1 (One Health Trust, 2010). MRSApresents a large threat to society, especially to those who are in the hospital or in nursing homesand are at higher risk of contracting this infection as shown in Figure 2 (Lee et al., 2013)...
+                             <a target="_blank" href="https://www.researchgate.net/publication/375362083_Investigation_of_6_Vulnerable_Strains_of_MRSA_High_Areas_of_Occurrence_for_MRSA_and_Protein_Structure_and_Function_Variants_for_BlaZ_gene">Click to download</a>                    
+
+                        </p>
+                </div>
+                <div class="col-sm-4">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Pwpv_8KoO9w?si=p6a0ADKoby-28PZZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <div id="myModal" class="modal">
+        <span class="close-modal-button" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+    <footer> </footer>
+
+    <!-- Include Bootstrap 5 JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="custom.js"></script>
+    <!-- Include custom JS if any -->
+</body>
+
+</html>
