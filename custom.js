@@ -27,10 +27,10 @@ document.addEventListener("scroll", function () {
 });
 
 
-function openModal(imageSrc) {
+function openModal(imageSrc, title) {
   var modal = document.getElementById("myModal");
   var modalImg = document.getElementById("modalImg");
-  
+  var modalTitle = document.getElementById("modalTitle");
   // Add the blur class to the background elements
   var backgroundElements = document.querySelectorAll(".container > *");
   backgroundElements.forEach(function(element) {
@@ -39,6 +39,7 @@ function openModal(imageSrc) {
   
   modal.style.display = "block";
   modalImg.src = imageSrc;
+  modalTitle.textContent = title;
 }
 
 function closeModal() {
